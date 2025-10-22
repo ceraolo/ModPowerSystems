@@ -18,7 +18,7 @@ equation
           Line(points={{8,58}}, color={0,0,0}),
           Line(points={{74,0},{100,0}},color={0,0,0}),
           Line(points={{-54,-34}}, color={0,0,0}),
-          Line(points={{-100,0},{-72,0}},
+          Line(points={{-98,0},{-70,0}},
           color={0,0,0}),
         Text(
           extent={{-150,84},{150,44}},

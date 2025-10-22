@@ -23,7 +23,7 @@ model VoltageSource_RLC
     annotation (Placement(transformation(extent={{-18,-38},{2,-18}})));
   ModPowerSystems.PhasorThreePhase.Basics.Inductor inductor annotation (
       Placement(transformation(
-        extent={{-10,-10},{10,10}},
+        extent={{-10,10},{10,-10}},
         rotation=90,
         origin={14,0})));
   ModPowerSystems.PhasorThreePhase.Basics.Ground ground3
