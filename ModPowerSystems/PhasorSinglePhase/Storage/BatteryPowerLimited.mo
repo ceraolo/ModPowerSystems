@@ -1,4 +1,4 @@
-﻿within ModPowerSystems.PhasorSinglePhase.Storage;
+within ModPowerSystems.PhasorSinglePhase.Storage;
 model BatteryPowerLimited
   "Battery model with losses and limited dis/charging power"
   import ModPowerSystems;

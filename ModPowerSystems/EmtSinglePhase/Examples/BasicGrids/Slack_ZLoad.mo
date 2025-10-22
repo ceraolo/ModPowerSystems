@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtSinglePhase.Examples.BasicGrids;
-
 model Slack_ZLoad
   ModPowerSystems.EmtSinglePhase.Slack.Slack slack1(Vnom = 20e3)  annotation(
     Placement(visible = true, transformation(origin = {0, 20}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));

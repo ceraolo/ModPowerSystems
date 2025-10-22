@@ -2,7 +2,8 @@ within ModPowerSystems.EmtThreePhase.Basics;
 model VoltageAC
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePort;
 
-  parameter Modelica.SIunits.Voltage Vpeak = 10 "Peak value of sinusoidal voltage";
+  parameter Modelica.Units.SI.Voltage Vpeak=10
+    "Peak value of sinusoidal voltage";
   parameter SI.Angle phiV = 0 "Initial Voltage Angle";
 
   constant SI.Angle[3] phaseShift = (0:2)*2*pi/3 "phase shift";

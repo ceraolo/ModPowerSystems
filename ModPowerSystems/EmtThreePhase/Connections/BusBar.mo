@@ -7,7 +7,7 @@ model BusBar
 
 equation
   i = zeros(3);
-  
+
   annotation (
     Icon(
       coordinateSystem(
@@ -24,5 +24,5 @@ equation
           fillColor={0,0,0},
           fillPattern=FillPattern.Solid)}), Diagram(coordinateSystem(extent={{-100,
             0},{100,200}})));
- 
+
 end BusBar;

@@ -9,7 +9,7 @@ model Transformer
   parameter Real Ukr = 12.04 "short circuit voltage";
   parameter Real TapPos = 0 "tap changer position";
   parameter Real TapStep = 0.1 "tap changer step in % of primary voltage level";
-    
+
   final parameter Real ratio = (Vnom1+TapPos*TapStep/100*Vnom1)/Vnom2 "ratio considering tap changer position";
   final parameter SI.Impedance Z = Ukr*Vnom1^2/(Sr*100);
   final parameter SI.Resistance R = URr*Vnom1^2/(Sr*100);

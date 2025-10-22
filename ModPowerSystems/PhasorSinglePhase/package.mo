@@ -1,5 +1,5 @@
 within ModPowerSystems;
-package PhasorSinglePhase 
+package PhasorSinglePhase  
 
 
 annotation (Icon(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},

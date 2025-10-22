@@ -5,7 +5,7 @@ package Slack
     extends
       ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase.OnePortGroundedInit;
 
-    parameter Modelica.SIunits.Angle phiV = 0 "Initial Voltage Angle";
+    parameter Modelica.Units.SI.Angle phiV=0 "Initial Voltage Angle";
     constant SI.Angle[3] phaseShift = (0:2)*2*pi/3 "phase shift";
 
     outer ModPowerSystems.Base.System system;

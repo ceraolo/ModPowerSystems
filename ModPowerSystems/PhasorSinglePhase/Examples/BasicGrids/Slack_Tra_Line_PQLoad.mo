@@ -1,6 +1,7 @@
 within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
 model Slack_Tra_Line_PQLoad
-import ModPowerSystems;inner ModPowerSystems.Base.System system
+import ModPowerSystems;
+                       inner ModPowerSystems.Base.System system
     annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
   ModPowerSystems.PhasorSinglePhase.Connections.PiLine piLine(
     Vnom=20e3,
@@ -8,7 +9,7 @@ import ModPowerSystems;inner ModPowerSystems.Base.System system
     x=0.121,
     g=0.0,
     b=0,
-    length=10) 
+    length=10)
    annotation (Placement(transformation(
         extent={{-10,-10},{10,10}},
         rotation=-90,
@@ -22,7 +23,7 @@ import ModPowerSystems;inner ModPowerSystems.Base.System system
     Vnom2=20e3,
     URr=0.63,
     Ukr=12.04,
-    Sr=20e6)                                    
+    Sr=20e6)
    annotation (Placement(
         transformation(
         extent={{-10,-10},{10,10}},
@@ -45,13 +46,13 @@ equation
                                              color={0,0,0}));
   connect(transformer.Pin1, N0.Pin1)
     annotation (Line(points={{0,-4},{0,0}},  color={0,0,0}));
-  connect(piLine.Pin1, N1.Pin1) 
+  connect(piLine.Pin1, N1.Pin1)
    annotation (Line(points={{1.77636e-015,-34},{0,-34},
           {0,-30}},color={0,0,0}));
   connect(transformer.Pin2, N1.Pin1)
     annotation (Line(points={{0,-24},{0,-30}},
                                              color={0,0,0}));
-  connect(piLine.Pin2, N2.Pin1) 
+  connect(piLine.Pin2, N2.Pin1)
    annotation (Line(points={{-1.77636e-015,-54},{
           -1.77636e-015,-64},{0,-64}}, color={0,0,0}));
   connect(N2.Pin1, pQLoad.Pin1)

@@ -2,10 +2,11 @@ within ;
 package ModPowerSystems
   extends Modelica.Icons.Package;
   // Import mathematical constants and functions
-  import SI = Modelica.SIunits;
+  import SI = Modelica.Units.SI;
   import Modelica.Constants.pi;
   import Modelica.Math;
-  import Modelica.ComplexMath.'abs';
+  import 'abs' =
+         Modelica.ComplexMath.abs;
   import Modelica.ComplexMath.arg;
   import Modelica.ComplexMath.fromPolar;
   import Modelica.ComplexMath.real;
@@ -16,7 +17,10 @@ package ModPowerSystems
 
   annotation (
   preferredView="info",
-  uses(Modelica(version="3.2.2"), Complex(version="3.2.2"), ModelicaServices(version = "3.2.2")),
+  uses(
+      Modelica(version="4.0.0"),
+      Complex(version="4.0.0"),
+      ModelicaServices(version="4.0.0")),
   Documentation(info="<html>
   <p><b>ModPowerSystems</b> is a free package that is developed with the Modelica&reg; language from the
   Modelica Association, see <a href=\"https://www.Modelica.org\">https://www.Modelica.org</a>.</p>   
@@ -30,5 +34,7 @@ package ModPowerSystems
   see <a href=\"modelica://Modelica.UsersGuide.ModelicaLicense2\">Modelica.UsersGuide.ModelicaLicense2</a> 
   or visit <a href=\"https://www.modelica.org/licenses/ModelicaLicense2\"> https://www.modelica.org/licenses/ModelicaLicense2</a>.</i></p>  
   <p/>
-  </html>"));
+  </html>"),
+    version="1",
+    conversion(noneFromVersion=""));
 end ModPowerSystems;

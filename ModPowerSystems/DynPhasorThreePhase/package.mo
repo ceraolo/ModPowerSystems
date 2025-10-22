@@ -1,5 +1,5 @@
 within ModPowerSystems;
-package DynPhasorThreePhase 
+package DynPhasorThreePhase  
 
 
 annotation (Icon(graphics={

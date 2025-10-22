@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtSinglePhase.Examples.BasicCircuits;
-
 model VoltageSourceAC_RL_Init
   inner ModPowerSystems.Base.System system
     annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
@@ -24,7 +23,7 @@ model VoltageSourceAC_RL_Init
 equation
   connect(resistor.Pin1, inductor.Pin2)
     annotation (Line(points={{6,16},{14,16},{14,10}}, color={0,0,0}));
-  connect(ground.Pin1, voltageSource.Pin1) 
+  connect(ground.Pin1, voltageSource.Pin1)
    annotation (Line(points={{-52,-16},{
           -52,-16},{-52,16},{-42,16}}, color={0,0,0}));
   connect(inductor.Pin1, ground3.Pin1)

@@ -1,8 +1,7 @@
 within ModPowerSystems.EmtThreePhase.Generation;
-
 model SynchronousGenerator_FullModel_StaticExciter
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePortGrounded;
-  
+
  // general machine characteristics
   parameter Real V_nom = 24e3 "Nominal phase-to-phase RMS voltage";
   parameter Real P_nom = 555e6 "Nominal turbine (active) power (MW)";
@@ -29,7 +28,7 @@ model SynchronousGenerator_FullModel_StaticExciter
   parameter Real Q_out = -8.17432e7 "Operating point active power [VA]";
   parameter Real Volt_abs = 25.2e3 "Voltage magnitude in steady state [V]";
   parameter Real Volt_theta = 10.5259 "Voltage angle in steady state [deg]";
-  
+
   Modelica.Blocks.Sources.Constant P_m(k = P_out) annotation(
     Placement(visible = true, transformation(extent = {{-94, 8}, {-84, 18}}, rotation = 0)));
   Modelica.Blocks.Sources.Constant Q(k = Q_out) annotation(

@@ -25,7 +25,7 @@ equation
             lineColor={0,0,0},
             pattern=LinePattern.Solid),
           Line(
-            points={{20,60},{60,20}},        
+            points={{20,60},{60,20}},
             pattern=LinePattern.Solid),
           Line(
             points={{-20,60},{60,-20}},

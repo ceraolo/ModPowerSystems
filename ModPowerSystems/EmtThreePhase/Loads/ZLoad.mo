@@ -4,11 +4,13 @@ model ZLoad "constant impedance load"
   outer ModPowerSystems.Base.System system;
 
   parameter SI.Voltage Vnom = 110e3 "Nominal phase-to-phase RMS voltage";
-  parameter Modelica.SIunits.ActivePower[3] Pnom = {0.5e6, 0.5e6, 0.5e6} "active power per phase";
-  parameter Modelica.SIunits.ReactivePower[3] Qnom = {0.5e6, 0.5e6, 0.5e6} "reactive power per phase";
+  parameter Modelica.Units.SI.ActivePower[3] Pnom={0.5e6,0.5e6,0.5e6}
+    "active power per phase";
+  parameter Modelica.Units.SI.ReactivePower[3] Qnom={0.5e6,0.5e6,0.5e6}
+    "reactive power per phase";
   SI.Resistance[3,3] R = {{(Vnom/sqrt(3))^2*Pnom[1]/((Pnom[1])^2+(Qnom[1])^2),0,0}, {0, (Vnom/sqrt(3))^2*Pnom[2]/((Pnom[2])^2+(Qnom[2])^2), 0},{0, 0, (Vnom/sqrt(3))^2*Pnom[3]/((Pnom[3])^2+(Qnom[3])^2)}};
-  SI.Inductance L[3,3] = {{(Vnom/sqrt(3))^2*Qnom[1]/((Pnom[1])^2+(Qnom[1])^2)/ system.omega, 0, 0},{0, (Vnom/sqrt(3))^2*Qnom[2]/((Pnom[2])^2+(Qnom[2])^2)/ system.omega, 0}, {0, 0, (Vnom/sqrt(3))^2*Qnom[3]/((Pnom[3])^2+(Qnom[3])^2)/ system.omega}} ;
-  Modelica.SIunits.Angle PhiNom = acos(Pnom[1]/sqrt(Pnom[1]^2+Qnom[1]^2))
+  SI.Inductance L[3,3] = {{(Vnom/sqrt(3))^2*Qnom[1]/((Pnom[1])^2+(Qnom[1])^2)/ system.omega, 0, 0},{0, (Vnom/sqrt(3))^2*Qnom[2]/((Pnom[2])^2+(Qnom[2])^2)/ system.omega, 0}, {0, 0, (Vnom/sqrt(3))^2*Qnom[3]/((Pnom[3])^2+(Qnom[3])^2)/ system.omega}};
+  Modelica.Units.SI.Angle PhiNom=acos(Pnom[1]/sqrt(Pnom[1]^2 + Qnom[1]^2))
     "nominal phase angle";
 equation
     v = R*i + L*der(i);

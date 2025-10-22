@@ -26,7 +26,7 @@ equation
   i[:] = -Plug2.Pins[:].i;
   vpp[:] = sqrt(3)*v[:];
   p_instant = v[:]*i[:];
-  
+
   annotation (
     Icon(
       coordinateSystem(

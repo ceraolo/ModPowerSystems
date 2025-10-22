@@ -1,5 +1,4 @@
 within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
-
 model Slack_TraTapChanger_PQLoad
   ModPowerSystems.PhasorSinglePhase.Slack.Slack SL(Vnom = 110e3) annotation(
     Placement(transformation(extent = {{-10, 28}, {10, 8}})));
@@ -21,7 +20,6 @@ equation
   connect(N1.Pin1, PQ0.Pin1) annotation(
     Line(points = {{0, -30}, {0, -34}}, color = {0, 0, 0}));
   annotation(
-    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}})));
-  annotation(
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}})),
     Placement(transformation(extent = {{-100, 80}, {-80, 100}})));
 end Slack_TraTapChanger_PQLoad;

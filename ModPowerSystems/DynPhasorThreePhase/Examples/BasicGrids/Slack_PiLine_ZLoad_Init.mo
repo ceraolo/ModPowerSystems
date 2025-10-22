@@ -2,7 +2,7 @@ within ModPowerSystems.DynPhasorThreePhase.Examples.BasicGrids;
 model Slack_PiLine_ZLoad_Init
 inner ModPowerSystems.Base.System system
     annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
-  ModPowerSystems.DynPhasorThreePhase.Slack.Slack slack(Vnom = 110e3, phiV = 0) 
+  ModPowerSystems.DynPhasorThreePhase.Slack.Slack slack(Vnom = 110e3, phiV = 0)
     annotation (Placement(transformation(extent={{-10,30},{10,10}})));
   ModPowerSystems.DynPhasorThreePhase.Connections.BusBar N0( v( re( start = {63508.529610858845, -31754.264805429408, -31754.264805429408}), im( start = {0.0, -55000.000000000015, 55000.000000000015})))
     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
@@ -18,16 +18,16 @@ inner ModPowerSystems.Base.System system
    annotation(
     Placement(visible = true, transformation(origin = {0, -54}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 equation
-  connect(zLoad1.Plug1, N1.Plug1) 
+  connect(zLoad1.Plug1, N1.Plug1)
    annotation(
     Line(points = {{0, -44}, {0, -28}}));
-  connect(slack.Plug1, N0.Plug1) 
+  connect(slack.Plug1, N0.Plug1)
    annotation(
     Line(points = {{0, 10}, {0, 10}, {0, 0}}, color = {0, 0, 0}));
-  connect(N0.Plug1, piLine.Plug1) 
+  connect(N0.Plug1, piLine.Plug1)
    annotation(
     Line(points = {{0, 0}, {0, 0}, {0, -4}}, color = {0, 0, 0}));
-  connect(N1.Plug1, piLine.Plug2) 
+  connect(N1.Plug1, piLine.Plug2)
    annotation(
     Line(points = {{0, -28}, {0, -28}, {0, -24}, {-1.77636e-015, -24}}, color = {0, 0, 0}));
   annotation (Placement(transformation(extent={{-10,32},{10,12}})),

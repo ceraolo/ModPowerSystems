@@ -16,7 +16,7 @@ model Transformer
   final parameter SI.Resistance[3,3] Rmat = {{R,0,0}, {0,R,0}, {0,0,R}};
   final parameter SI.Reactance[3,3] Xmat = {{X,0,0}, {0,X,0}, {0,0,X}};
 
-  Connections.RxLine Imp(r=Rmat, x=Xmat, length=1) 
+  Connections.RxLine Imp(r=Rmat, x=Xmat, length=1)
     annotation (Placement(transformation(extent={{-60,-20},{-20,20}})));
   IdealTransformer Tr(Vnom1=Vnom1, Vnom2=Vnom2, ratio=ratio)
     annotation (Placement(transformation(extent={{20,-20},{60,20}})));

@@ -1,5 +1,5 @@
 within ModPowerSystems.EmtSinglePhase;
-package Basics 
+package Basics  
   extends Modelica.Icons.Package;
 
 end Basics;

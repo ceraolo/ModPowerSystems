@@ -1,7 +1,6 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
-
 model VoltageAC_InductionMachine
-  ModPowerSystems.EmtThreePhase.Basics.Ground ground(Vnom = 0) 
+  ModPowerSystems.EmtThreePhase.Basics.Ground ground(Vnom = 0)
     annotation (Placement(transformation(extent={{-40,-18},{-20,2}})));
   inner ModPowerSystems.Base.System system(freq_nom = 60)
     annotation (Placement(transformation(extent={{-70,74},{-50,94}})));
@@ -11,7 +10,7 @@ model VoltageAC_InductionMachine
         rotation=180,
         origin={0,8})));
   ModPowerSystems.EmtThreePhase.Machines.InductionMachineSquirrelCage inductionMachineSquirrelCage(
-    
+
     J=0.089,
     L_M=69.31e-3,
     L_lr=2e-3,

@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Control;
-
 block ReferenceSignalGenerator
   Real omega = 2*pi*fref;
   Real theta = omega*time;

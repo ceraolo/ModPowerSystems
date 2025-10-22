@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
-
 model DER_Feeder
   inner ModPowerSystems.Base.System system(freq_nom = 50) annotation(
     Placement(visible = true, transformation(origin = {-64, 92}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));

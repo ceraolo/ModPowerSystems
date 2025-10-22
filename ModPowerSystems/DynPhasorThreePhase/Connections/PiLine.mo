@@ -11,7 +11,7 @@ model PiLine
   parameter SI.Susceptance[3,3] b = {{40e-6,0,0}, {0,40e-6,0}, {0,0,40e-6}} "Shunt Susceptance per km";
   parameter SI.Conductance[3,3] g = {{0,0,0}, {0,0,0}, {0,0,0}} "Shunt Conductance per km";
 
-  
+
   parameter SI.Current Imax=100 "maximal current";
 
   outer ModPowerSystems.Base.System system;
@@ -20,7 +20,7 @@ model PiLine
   SI.Resistance[3,3] R = r * length;
   SI.Reactance[3,3] X = x * length;
   SI.Inductance[3,3] L = X / system.omega;
-  
+
   SI.Susceptance[3,3] B = b * length;
   SI.Conductance[3,3] G = g * length;
   SI.Capacitance[3,3] C = B / system.omega;
@@ -35,7 +35,7 @@ equation
   i1.im = i_rx.im + C/2*der(v1.im) + B/2*v1.re + G/2*v1.im;
   -i2.re = - i_rx.re + C/2*der(v2.re) - B/2*v2.im + G/2*v2.re;
   -i2.im = - i_rx.im + C/2*der(v2.im) + B/2*v2.re + G/2*v2.im;
-  
+
   annotation (
     Icon(
       coordinateSystem(

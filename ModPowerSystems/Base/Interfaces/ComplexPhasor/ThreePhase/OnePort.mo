@@ -1,5 +1,5 @@
 within ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase;
-partial model OnePort 
+partial model OnePort
   "Shell model for one-port models with one electrical three-phase connector"
 
   ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase.Plug Plug1

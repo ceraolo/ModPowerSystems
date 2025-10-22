@@ -1,6 +1,6 @@
 within ModPowerSystems.EmtThreePhase.Measurements;
 model PLL
-extends Modelica.Icons.RotationalSensor;
+extends Modelica.Icons.RoundSensor;
 
   Modelica.Blocks.Interfaces.RealInput V_abc[3] annotation (
     Placement(visible = true, transformation(origin = {-120, 0}, extent = {{-20, -20}, {20, 20}}, rotation = 0), iconTransformation(origin = {-120, 0}, extent = {{-20, -20}, {20, 20}}, rotation = 0)));
@@ -15,9 +15,9 @@ extends Modelica.Icons.RotationalSensor;
   parameter Real Kd_pll=1;
   Real phi_pll;
   Real freq;
-  Real V_dq[2];    
+  Real V_dq[2];
   //Real V_abc_f[3];
-  
+
 initial equation
   theta=0;
   omega=omega_nom;
@@ -27,7 +27,7 @@ equation
   //V_dq =Transforms.Functions.ABCtoDQ_Park(V_abc_f,theta);
   V_dq =Transforms.Functions.ABCtoDQ_Park(V_abc,theta);
   // ******
-  
+
   der(theta)=omega;
   omega=omega_nom+Kp_pll*der(phi_pll)+Ki_pll*(phi_pll)+Kd_pll*der(V_dq[2]);
   der(phi_pll) = V_dq[2];

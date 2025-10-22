@@ -4,7 +4,7 @@ model Slack "infinite power source"
   extends
     ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.OnePortGroundedInit;
 
-  parameter Modelica.SIunits.Angle phiV = 0 "Initial Voltage Angle";
+  parameter Modelica.Units.SI.Angle phiV=0 "Initial Voltage Angle";
 
   outer ModPowerSystems.Base.System system;
 

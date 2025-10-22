@@ -20,14 +20,14 @@ block CurrentCtrl
 equation
   I_d=I_dq[1];
   I_q=I_dq[2];
-  
+
   // equations 10 & 11 in [2]
   der(gamma_d)=I_inv_d_con-I_d;
   der(gamma_q)=I_inv_q_con-I_q;
-  
+
   // with cross coupling of dq current, use (1) or (2), remember also to modify corresponding Inductance in grid model into "inner"
   // without cross coupling, use (3)
-  
+
   /*******(1) original equations 12 & 13 in [2]
   outer ModPowerSystems.EmtThreePhase.Basics.Inductor L_inv;
   V_dq_con[1] = -1*pll.omega_nom*L_inv.L[1,1]*Ki_cd+gamma_d+Kp_cd*der(gamma_d);
@@ -39,7 +39,7 @@ equation
   V_dq_con[1] = -1*pll.omega_nom*L_inv.L[1,1]*I_q+Ki_cd*gamma_d+Kp_cd*der(gamma_d);
   V_dq_con[2] = pll.omega_nom*L_inv.L[1,1]*I_d+Ki_cq*gamma_q+Kp_cq*der(gamma_q);
   */
-  
+
   /*******(3) modified equations 12 & 13 in [2], without cross-coupling */
   V_dq_con[1] = Ki_cd*gamma_d+Kp_cd*der(gamma_d);
   V_dq_con[2] = Ki_cq*gamma_q+Kp_cq*der(gamma_q);

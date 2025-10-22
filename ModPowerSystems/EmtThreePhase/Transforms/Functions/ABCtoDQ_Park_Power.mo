@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Transforms.Functions;
-
 function ABCtoDQ_Park_Power
 
   input Real f_abc[3];
@@ -13,4 +12,5 @@ algorithm
 
 
 annotation(
-    Documentation(info = "<html><head></head><body><h3><span style=\"font-weight: normal;\">Park transformation for</span></h3><div><font size=\"4\">* <b>power invariants</b></font></div><div><b><font size=\"4\">* q-axis aligned to a-axis<br></font></b><div><br></div></div><div><font size=\"4\">[1]&nbsp;</font><a href=\"https://de.mathworks.com/help/physmod/sps/ref/parktransform.html\" style=\"font-size: 12px;\">https://de.mathworks.com/help/physmod/sps/ref/parktransform.html</a></div></body></html>"));end ABCtoDQ_Park_Power;
+    Documentation(info = "<html><head></head><body><h3><span style=\"font-weight: normal;\">Park transformation for</span></h3><div><font size=\"4\">* <b>power invariants</b></font></div><div><b><font size=\"4\">* q-axis aligned to a-axis<br></font></b><div><br></div></div><div><font size=\"4\">[1]&nbsp;</font><a href=\"https://de.mathworks.com/help/physmod/sps/ref/parktransform.html\" style=\"font-size: 12px;\">https://de.mathworks.com/help/physmod/sps/ref/parktransform.html</a></div></body></html>"));
+end ABCtoDQ_Park_Power;

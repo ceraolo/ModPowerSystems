@@ -6,7 +6,7 @@ model Capacitor
     parameter SI.Capacitance C = 1e-6;
     SI.Reactance X = -1/(system.omega*C);
 
-    Modelica.SIunits.ComplexVoltage v;
+  Modelica.Units.SI.ComplexVoltage v;
 
 equation
     v = j*X*i;

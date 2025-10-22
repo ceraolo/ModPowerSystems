@@ -1,5 +1,5 @@
 within ModPowerSystems.PhasorSinglePhase.Examples;
-package BasicGrids 
+package BasicGrids  
   extends Modelica.Icons.ExamplesPackage;
 
 end BasicGrids;

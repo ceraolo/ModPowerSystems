@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtSinglePhase.Examples;
-
 package BasicGrids
 
 annotation (Icon(graphics={

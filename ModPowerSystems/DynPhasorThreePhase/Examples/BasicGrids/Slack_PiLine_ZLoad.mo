@@ -1,5 +1,4 @@
 within ModPowerSystems.DynPhasorThreePhase.Examples.BasicGrids;
-
 model Slack_PiLine_ZLoad
   ModPowerSystems.DynPhasorThreePhase.Slack.Slack slack annotation(
     Placement(visible = true, transformation(origin = {0, 50}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));

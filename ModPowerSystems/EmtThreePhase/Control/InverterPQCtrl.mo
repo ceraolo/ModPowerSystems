@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Control;
-
 block InverterPQCtrl
   Modelica.Blocks.Interfaces.RealInput V_in[3] annotation(
     Placement(visible = true, transformation(origin = {-120, 62}, extent = {{-20, -20}, {20, 20}}, rotation = 0), iconTransformation(origin = {-120, 62}, extent = {{-20, -20}, {20, 20}}, rotation = 0)));

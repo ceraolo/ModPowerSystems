@@ -1,5 +1,4 @@
 within ModPowerSystems.PhasorSinglePhase.Switches;
-
 model Breaker
   extends ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.OnePortInit;
   parameter SI.Resistance R_on = 1e-4 "resistance closed";

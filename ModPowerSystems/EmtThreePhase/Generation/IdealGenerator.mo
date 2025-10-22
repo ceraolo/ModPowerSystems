@@ -1,9 +1,9 @@
 within ModPowerSystems.EmtThreePhase.Generation;
-
 model IdealGenerator
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePortGrounded;
 
-  parameter Modelica.SIunits.Voltage Vnom = 24e3 "Nominal RMS value of sinusoidal voltage";
+  parameter Modelica.Units.SI.Voltage Vnom=24e3
+    "Nominal RMS value of sinusoidal voltage";
   parameter SI.Angle phiV = 0 "Initial Voltage Angle";
 
   constant SI.Angle[3] phaseShift = (0:2)*2*pi/3 "phase shift";

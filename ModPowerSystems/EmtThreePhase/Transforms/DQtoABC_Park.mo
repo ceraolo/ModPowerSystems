@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Transforms;
-
 model DQtoABC_Park
   Modelica.Blocks.Interfaces.RealInput v_dq[2] annotation (
     Placement(visible = true, transformation(origin = {-120, 0}, extent = {{-20, -20}, {20, 20}}, rotation = 0), iconTransformation(origin = {-120, 0}, extent = {{-20, -20}, {20, 20}}, rotation = 0)));

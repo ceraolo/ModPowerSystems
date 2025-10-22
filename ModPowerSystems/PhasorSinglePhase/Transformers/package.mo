@@ -1,5 +1,5 @@
 within ModPowerSystems.PhasorSinglePhase;
-package Transformers 
+package Transformers  
   extends Modelica.Icons.Package;
 
 end Transformers;

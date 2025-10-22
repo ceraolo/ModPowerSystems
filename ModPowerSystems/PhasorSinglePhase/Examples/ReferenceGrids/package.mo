@@ -1,5 +1,5 @@
 within ModPowerSystems.PhasorSinglePhase.Examples;
-package ReferenceGrids 
+package ReferenceGrids  
 annotation (Icon(graphics={
         Rectangle(
           lineColor={200,200,200},

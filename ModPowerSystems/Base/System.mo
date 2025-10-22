@@ -1,7 +1,10 @@
 within ModPowerSystems.Base;
 model System
-  parameter Modelica.SIunits.Frequency freq_nom = 50 "nominal frequency"
-   annotation(Evaluate=true, Dialog(group="System Settings"), choices(choice=50 "50 Hz", choice=60 "60 Hz"));
+  parameter Modelica.Units.SI.Frequency freq_nom=50 "nominal frequency"
+    annotation (
+    Evaluate=true,
+    Dialog(group="System Settings"),
+    choices(choice=50 "50 Hz", choice=60 "60 Hz"));
 
   Real omega;
   Real theta;

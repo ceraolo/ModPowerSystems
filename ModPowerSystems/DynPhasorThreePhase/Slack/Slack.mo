@@ -5,7 +5,7 @@ model Slack "infinite power source"
     ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase.OnePortGrounded;
 
   parameter SI.Voltage Vnom = 110e3 "Nominal phase-to-phase RMS voltage";
-  parameter Modelica.SIunits.Angle phiV = 0 "Initial Voltage Angle";
+  parameter Modelica.Units.SI.Angle phiV=0 "Initial Voltage Angle";
   constant SI.Angle[3] phaseShift = (0:2)*2*pi/3 "phase shift";
 
   outer ModPowerSystems.Base.System system;

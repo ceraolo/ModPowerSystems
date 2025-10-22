@@ -14,15 +14,15 @@ equation
   // phase 1
   v[1].re = Z[1].im/system.omega*der(i[1].re) - Z[1].im*i[1].im + Z[1].re*i[1].re;
   v[1].im = Z[1].im/system.omega*der(i[1].im) + Z[1].im*i[1].re + Z[1].re*i[1].im;
-  
+
   // phase 2
   v[2].re = Z[2].im/system.omega*der(i[2].re) - Z[2].im*i[2].im + Z[2].re*i[2].re;
   v[2].im = Z[2].im/system.omega*der(i[2].im) + Z[2].im*i[2].re + Z[2].re*i[2].im;
-  
+
   // phase 3
   v[3].re = Z[3].im/system.omega*der(i[3].re) - Z[3].im*i[3].im + Z[3].re*i[3].re;
   v[3].im = Z[3].im/system.omega*der(i[3].im) + Z[3].im*i[3].re + Z[3].re*i[3].im;
-  
+
   annotation (
     Placement(
       transformation(

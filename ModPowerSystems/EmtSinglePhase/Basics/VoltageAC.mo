@@ -2,7 +2,8 @@ within ModPowerSystems.EmtSinglePhase.Basics;
 model VoltageAC
   extends ModPowerSystems.Base.Interfaces.RealValue.SinglePhase.OnePort;
 
-  parameter Modelica.SIunits.Voltage Vpeak = 10 "Nominal peak voltage phase-to-neutral";
+  parameter Modelica.Units.SI.Voltage Vpeak=10
+    "Nominal peak voltage phase-to-neutral";
   parameter SI.Angle phiV = 0 "Initial voltage angle";
 
   outer ModPowerSystems.Base.System system;

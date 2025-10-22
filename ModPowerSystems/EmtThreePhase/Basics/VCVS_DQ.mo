@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Basics;
-
 model VCVS_DQ
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePortInit;
   Modelica.Blocks.Interfaces.RealInput V_dq_in[2] annotation(

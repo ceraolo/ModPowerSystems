@@ -1,5 +1,4 @@
 within ModPowerSystems.PhasorSinglePhase.Fault;
-
 model ThreePhaseFault
   extends ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.OnePortGroundedInit;
 
@@ -16,7 +15,7 @@ equation
   else
     R = R_off;
   end if;
-  
+
   v = R*i;
 
   annotation (Icon(graphics={

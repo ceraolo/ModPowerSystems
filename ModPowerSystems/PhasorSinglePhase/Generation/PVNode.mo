@@ -1,5 +1,4 @@
 within ModPowerSystems.PhasorSinglePhase.Generation;
-
 model PVNode
   extends ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.OnePortGroundedInit;
 

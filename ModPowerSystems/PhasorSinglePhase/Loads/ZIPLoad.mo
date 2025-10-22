@@ -1,13 +1,12 @@
 within ModPowerSystems.PhasorSinglePhase.Loads;
-
 model ZIPLoad
   extends ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.OnePortGroundedInit;
 
   parameter SI.ActivePower P0 = 0.5e6 "initial active power";
   parameter SI.ReactivePower Q0 = 0.5e6 "initial reactive power";
   parameter SI.Voltage V0 = 11e3 "initial operating voltage";
-  parameter Real a0, a1, a2, b0, b1, b2; 
-  
+  parameter Real a0, a1, a2, b0, b1, b2;
+
 equation
     P = P0*(a0 + a1*Vpp/V0 + a2*((Vpp*Vpp)/(V0*V0)));
     Q = Q0*(b0 + b1*Vpp/V0 + b2*((Vpp*Vpp)/(V0*V0)));

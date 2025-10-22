@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicCircuits;
-
 model VoltageAC_DQ0_Resistor
   ModPowerSystems.EmtThreePhase.Basics.VoltageAC_DQ0 voltageAC_DQ01 annotation(
     Placement(visible = true, transformation(origin = {-40, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));

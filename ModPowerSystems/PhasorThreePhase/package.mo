@@ -1,5 +1,5 @@
 within ModPowerSystems;
-package PhasorThreePhase 
+package PhasorThreePhase  
 
 
 annotation (Icon(graphics={

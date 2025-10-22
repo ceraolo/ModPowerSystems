@@ -7,12 +7,11 @@ model SolarGenerator
   Real Kelvin = 273.15;
   // Solar generation constants for model
   replaceable ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.SolarGenerators.RecordZhouBP580 model_data constrainedby
-    ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.SolarGenerators.BaseRecord
-                                                                                                                                                                                                            annotation (
+    ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.SolarGenerators.BaseRecord                                                                                                                  annotation (
      choices(choice(redeclare ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.SolarGenerators.RecordZhouBP580 model_data "Zhou BP580")));
   // Parameters for entire array
-  parameter Modelica.SIunits.ActivePower Pnom = 5000 "installed nominal power" annotation (
-    Evaluate = false);
+  parameter Modelica.Units.SI.ActivePower Pnom=5000 "installed nominal power"
+    annotation (Evaluate=false);
   parameter String profileFileName = "NoName" "file where matrix is stored" annotation (
     Dialog(loadSelector(filter = "Text files (*.txt);;MATLAB MAT-files (*.mat)", caption = "Open file in which table is present")));
   parameter String profileName = "NoName" "table name on file";
@@ -132,4 +131,3 @@ equation
     Icon(coordinateSystem(preserveAspectRatio = false, initialScale = 0.1), graphics = {Line(points = {{0, 100}, {0, 50}}), Ellipse(extent = {{-50, 50}, {50, -50}}, endAngle = 360), Text(extent = {{-100, -100}, {100, -60}}, textString = "%name"), Text(extent = {{-30, 30}, {30, -30}}, textString = "SG")}),
     Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}})));
 end SolarGenerator;
-

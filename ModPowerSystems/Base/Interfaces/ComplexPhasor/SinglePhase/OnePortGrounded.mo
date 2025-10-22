@@ -6,8 +6,8 @@ partial model OnePortGrounded
     annotation (Placement(transformation(extent={{-10,110},{10,90}})));
 
   // port voltage and current
-  Modelica.SIunits.ComplexVoltage v;
-  Modelica.SIunits.ComplexCurrent i;
+  Modelica.Units.SI.ComplexVoltage v;
+  Modelica.Units.SI.ComplexCurrent i;
 
   // characteristic values
   SI.ActivePower P "Consumed Active Power";

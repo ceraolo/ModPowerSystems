@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Switches;
-
 model Breaker
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePort;
   parameter SI.Resistance R_on[3] = {1e-4, 1e-4, 1e-4} "resistance closed";
