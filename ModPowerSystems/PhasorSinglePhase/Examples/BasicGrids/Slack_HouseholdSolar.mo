@@ -6,7 +6,7 @@ model Slack_HouseholdSolar
   final parameter String SolarProfileName = "SolarProfile";
 
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -76}, extent = {{-100, 80}, {-80, 100}})));
   Slack.Slack slack(Vnom=400) annotation (Placement(transformation(
         extent={{-10,-10},{10,10}},
         rotation=180,
@@ -24,5 +24,5 @@ equation
     annotation (Line(points={{-1.33227e-015,0},{-1.33227e-015,-16},{0,-16}},
                                                     color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-40, 20}, {20, -20}})));
 end Slack_HouseholdSolar;

@@ -2,7 +2,7 @@ within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
 model Slack_ZLoad "Fixed impedance load"
                                          import ModPowerSystems;
                                                                 inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -80}, extent = {{-100, 80}, {-80, 100}})));
   Loads.ZLoad zLoad(
     Vnom=20e3,
     Pnom=5e6,
@@ -17,6 +17,6 @@ equation
     annotation (Line(points={{0,10},{0,-4}},  color={0,0,0}));
   connect(slack.Pin1, N0.Pin1)
     annotation (Line(points={{0,10},{0,0}},   color={0,0,0}));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=false,   extent={{-100,
-            -100},{100,100}})));
+  annotation(Diagram(coordinateSystem(preserveAspectRatio=false,   extent={{-40,
+            40},{20,-20}})));
 end Slack_ZLoad;

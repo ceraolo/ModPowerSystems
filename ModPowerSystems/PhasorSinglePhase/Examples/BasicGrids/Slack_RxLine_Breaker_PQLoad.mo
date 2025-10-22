@@ -2,7 +2,7 @@ within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
 model Slack_RxLine_Breaker_PQLoad
   import ModPowerSystems;
   inner ModPowerSystems.Base.System system annotation(
-    Placement(transformation(extent = {{-100, 80}, {-80, 100}})));
+    Placement(transformation(origin = {60, -60}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.PhasorSinglePhase.Slack.Slack slack annotation(
     Placement(visible = true, transformation(extent = {{-10, 58}, {10, 38}}, rotation = 0)));
   ModPowerSystems.PhasorSinglePhase.Connections.BusBar N0 annotation(
@@ -33,5 +33,5 @@ equation
   annotation(
     Placement(transformation(extent = {{-10, 32}, {10, 12}})),
     Placement(transformation(extent = {{-100, 80}, {-80, 100}})),
-    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}})));
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-40, 60}, {20, -80}})));
 end Slack_RxLine_Breaker_PQLoad;

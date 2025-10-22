@@ -6,7 +6,7 @@ model Slack_SolarGenerator_CurtailPCC
   final parameter String LoadProfileName = "loadH";
 
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -70}, extent = {{-100, 80}, {-80, 100}})));
   Slack.Slack slack(Vnom=400)
     annotation (Placement(transformation(extent={{-10,24},{10,4}})));
   Generation.SolarGenerator solarGenerator(Vnom=400, profileFileName=SolarProfileFile, profileName=SolarProfileName,
@@ -28,5 +28,6 @@ equation
   connect(pQNormProfile.P_loadOut, solarGenerator.P_loadIn) annotation (Line(
         points={{-13.9,-10.5},{-1.95,-10.5},{-1.95,-10.1},{9.5,-10.1}}, color={0,
           0,127}));
-  annotation (experiment(StopTime=86400));
+  annotation (experiment(StopTime = 86400),
+  Diagram(coordinateSystem(extent = {{-40, 40}, {40, -20}})));
 end Slack_SolarGenerator_CurtailPCC;

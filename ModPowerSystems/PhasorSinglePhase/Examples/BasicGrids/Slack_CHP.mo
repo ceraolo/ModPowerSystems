@@ -6,7 +6,7 @@ model Slack_CHP
   Slack.Slack slack(Vnom=400)
     annotation (Placement(transformation(extent={{-10,24},{10,4}})));
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -76}, extent = {{-100, 80}, {-80, 100}})));
   Generation.CHP cHP(
     profileFileName=CHPProfileFile,
     profileName=CHPProfileName,
@@ -17,6 +17,6 @@ model Slack_CHP
 equation
   connect(slack.Pin1, cHP.Pin1)
     annotation (Line(points={{0,4},{0,4},{0,0}}, color={0,0,0}));
-  annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
-            -100},{100,100}})), experiment(StopTime=86400, Interval=60));
+  annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-40,
+            20},{20,-20}})), experiment(StopTime=86400, Interval=60));
 end Slack_CHP;

@@ -2,7 +2,7 @@ within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
 model Slack_RxLine_PVNode
   inner ModPowerSystems.Base.System system
    annotation (
-    Placement(transformation(extent = {{-100, 80}, {-80, 100}})));
+    Placement(transformation(origin = {60, -76}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.PhasorSinglePhase.Slack.Slack slack(Vnom = 24e3, phiV = 0)
    annotation (
     Placement(visible = true, transformation(extent = {{-10, 30}, {10, 10}}, rotation = 0)));
@@ -34,5 +34,5 @@ equation
   annotation (
     Placement(transformation(extent = {{-10, 32}, {10, 12}})),
     Placement(transformation(extent = {{-100, 80}, {-80, 100}})),
-    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}})));
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-40, 40}, {20, -60}})));
 end Slack_RxLine_PVNode;

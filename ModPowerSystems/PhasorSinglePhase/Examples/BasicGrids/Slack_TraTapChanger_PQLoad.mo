@@ -20,6 +20,6 @@ equation
   connect(N1.Pin1, PQ0.Pin1) annotation(
     Line(points = {{0, -30}, {0, -34}}, color = {0, 0, 0}));
   annotation(
-    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}})),
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-20, 40}, {20, -60}})),
     Placement(transformation(extent = {{-100, 80}, {-80, 100}})));
 end Slack_TraTapChanger_PQLoad;

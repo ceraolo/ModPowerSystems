@@ -5,7 +5,7 @@ model Slack_LVGridSmall_HouseholdLoad
   final parameter String LoadProfileName = "loadH";
 
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {94, -16}, extent = {{-100, 80}, {-80, 100}})));
   Slack.Slack slack(Vnom=400) annotation (Placement(transformation(
         extent={{-10,-10},{10,10}},
         rotation=180,
@@ -361,7 +361,7 @@ equation
           {30,58}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false, extent={{-100,-60},
             {100,100}})),                                        Diagram(
-        coordinateSystem(preserveAspectRatio=false, extent={{-100,-60},{100,100}})),
+        coordinateSystem(preserveAspectRatio=false, extent={{-100,80},{80,-40}})),
         experiment(
       StopTime=31536000,
       Interval=900,

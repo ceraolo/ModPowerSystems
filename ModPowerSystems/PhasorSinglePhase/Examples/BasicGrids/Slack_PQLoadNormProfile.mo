@@ -5,7 +5,7 @@ model Slack_PQLoadNormProfile
   final parameter String LoadProfileName = "loadH";
 
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -78}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.PhasorSinglePhase.Slack.Slack slack
     annotation (Placement(transformation(extent={{-10,30},{10,10}})));
   ModPowerSystems.PhasorSinglePhase.Connections.BusBar N0
@@ -18,6 +18,6 @@ equation
     annotation (Line(points={{0,10},{0,0}},   color={0,0,0}));
   connect(pQNormProfile.Pin1, N0.Pin1)
     annotation (Line(points={{0,-4},{0,0}},  color={0,0,0}));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=false,   extent={{-100,
-            -100},{100,100}})));
+  annotation(Diagram(coordinateSystem(preserveAspectRatio=false,   extent={{-40,
+            40},{20,-20}})));
 end Slack_PQLoadNormProfile;

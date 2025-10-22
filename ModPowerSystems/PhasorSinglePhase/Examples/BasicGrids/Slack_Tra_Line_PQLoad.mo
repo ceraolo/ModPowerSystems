@@ -2,7 +2,7 @@ within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
 model Slack_Tra_Line_PQLoad
 import ModPowerSystems;
                        inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -76}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.PhasorSinglePhase.Connections.PiLine piLine(
     Vnom=20e3,
     r=0.207,
@@ -57,6 +57,5 @@ equation
           -1.77636e-015,-64},{0,-64}}, color={0,0,0}));
   connect(N2.Pin1, pQLoad.Pin1)
     annotation (Line(points={{0,-64},{0,-64},{0,-68}}, color={0,0,0}));
-  annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{
-            -100,-100},{100,100}})));
+  annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-40,40},{20,-100}})));
 end Slack_Tra_Line_PQLoad;

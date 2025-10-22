@@ -1,7 +1,7 @@
 within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
 model Slack_PiLine_ZLoad
 inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -80}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.PhasorSinglePhase.Slack.Slack slack(Vnom = 110e3, phiV = 0)
     annotation (Placement(transformation(extent={{-10,30},{10,10}})));
   ModPowerSystems.PhasorSinglePhase.Connections.BusBar N0
@@ -32,7 +32,7 @@ equation
     Line(points = {{0, -28}, {0, -28}, {0, -24}, {-1.77636e-015, -24}}, color = {0, 0, 0}));
   annotation (Placement(transformation(extent={{-10,32},{10,12}})),
                 Placement(transformation(extent={{-100,80},{-80,100}})),
-              Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
-            -100},{100,100}})),
+              Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-40,
+            40},{20,-60}})),
   experiment(StartTime = 0, StopTime = 1, Tolerance = 1e-6, Interval = 0.002));
 end Slack_PiLine_ZLoad;

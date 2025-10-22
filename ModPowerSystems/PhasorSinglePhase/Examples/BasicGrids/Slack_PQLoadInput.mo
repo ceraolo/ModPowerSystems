@@ -3,7 +3,7 @@ model Slack_PQLoadInput
   import ModPowerSystems;
 
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -72}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.PhasorSinglePhase.Slack.Slack slack(Vnom=20e3)
     annotation (Placement(transformation(extent={{-10,30},{10,10}})));
   ModPowerSystems.PhasorSinglePhase.Connections.BusBar N0(Vnom=20e3)
@@ -26,6 +26,6 @@ equation
           -13},{-6,-13}},      color={0,0,127}));
   connect(Qload.y, pQLoad.Q_loadIn) annotation (Line(points={{-37.1,-45},{-20,
           -45},{-20,-17},{-6,-17}}, color={0,0,127}));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=false,   extent={{-100,
-            -100},{100,100}})));
+  annotation(Diagram(coordinateSystem(preserveAspectRatio=false,   extent={{-60,
+            40},{20,-60}})));
 end Slack_PQLoadInput;

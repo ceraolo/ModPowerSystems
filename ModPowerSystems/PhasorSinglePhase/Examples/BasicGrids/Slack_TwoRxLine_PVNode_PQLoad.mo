@@ -2,7 +2,7 @@ within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
 model Slack_TwoRxLine_PVNode_PQLoad
   import ModPowerSystems;
   inner ModPowerSystems.Base.System system annotation (
-    Placement(transformation(extent = {{-100, 80}, {-80, 100}})));
+    Placement(transformation(origin = {60, -70}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.PhasorSinglePhase.Slack.Slack slack(Vnom = 24e3, phiV(displayUnit = "rad") = 0) annotation (
     Placement(visible = true, transformation(extent = {{-10, 30}, {10, 10}}, rotation = 0)));
   ModPowerSystems.PhasorSinglePhase.Connections.BusBar N0(Vnom = 24e3) annotation (
@@ -51,5 +51,5 @@ equation
   annotation (
     Placement(transformation(extent = {{-10, 32}, {10, 12}})),
     Placement(transformation(extent = {{-100, 80}, {-80, 100}})),
-    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}})));
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-40, 40}, {40, -100}})));
 end Slack_TwoRxLine_PVNode_PQLoad;
