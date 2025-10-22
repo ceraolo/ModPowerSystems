@@ -1,5 +1,5 @@
 within ModPowerSystems.PhasorSinglePhase.Examples;
-package BasicCircuits 
+package BasicCircuits  
   extends Modelica.Icons.ExamplesPackage;
 
 end BasicCircuits;

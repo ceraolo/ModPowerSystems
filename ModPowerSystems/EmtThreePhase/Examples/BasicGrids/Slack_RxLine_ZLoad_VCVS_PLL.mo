@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
-
 model Slack_RxLine_ZLoad_VCVS_PLL
   ModPowerSystems.EmtThreePhase.Slack.Slack slack1(Vnom = 380, phiV = 0) annotation(
     Placement(visible = true, transformation(origin = {68, 30}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));
@@ -48,13 +47,13 @@ equation
   vCVS_Inv_Av1.V_dq_in={220,0};
   vCVS_Inv_Av1.theta=system.theta;
   */
-  
+
   /************ test with input from PLL
   */
   vCVS_Inv_Av1.V_dq_in=pll1.V_dq;
     connect(pll1.theta, vCVS_Inv_Av1.theta) annotation(
     Line(points = {{-13, 40}, {-36, 40}, {-36, 40}, {-59, 40}, {-59, -12}, {-59, -12}, {-59, -12}, {-59, -12}}, color = {0, 0, 127}));
-  
+
   annotation(
     Documentation(info = "<html><head></head><body><p>* this is intended to validate the VCVS_DQ model, pll and dq transform.&nbsp;<br>* expected results:</p><p><span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>**&nbsp;VCVS_DQ.v [:] = rxline1.v2 [:]&nbsp;<br><span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>**&nbsp;VCVS_DQ.i [:] close to 0.</p><p><br>* input to the controlled voltage source (VCVS_DQ) is V_dq from the PLL.</p><div style=\"font-size: 12px;\"><br></div></body></html>"));
 end Slack_RxLine_ZLoad_VCVS_PLL;

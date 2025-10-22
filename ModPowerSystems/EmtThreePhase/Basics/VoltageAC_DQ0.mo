@@ -2,11 +2,12 @@ within ModPowerSystems.EmtThreePhase.Basics;
 model VoltageAC_DQ0
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePort;
 
-  parameter Modelica.SIunits.Voltage Vpeak = 10 "Peak value of sinusoidal voltage";
+  parameter Modelica.Units.SI.Voltage Vpeak=10
+    "Peak value of sinusoidal voltage";
   parameter SI.Angle phiV = 0 "Initial Voltage Angle";
 
   outer ModPowerSystems.Base.System system;
-  
+
   // dq0 variables
   Real v_d;
   Real v_q;
@@ -14,8 +15,8 @@ model VoltageAC_DQ0
   Real i_d;
   Real i_q;
   Real i_0;
-  
-equation 
+
+equation
   // variable transformation
   {v_d, v_q, v_0}=ModPowerSystems.EmtThreePhase.Transforms.Functions.ABCtoDQ0_Kundur(v[:], system.theta);
   {i_d, i_q, i_0}=ModPowerSystems.EmtThreePhase.Transforms.Functions.ABCtoDQ0_Kundur(i[:], system.theta);

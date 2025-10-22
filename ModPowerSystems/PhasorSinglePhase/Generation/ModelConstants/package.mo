@@ -1,4 +1,4 @@
 within ModPowerSystems.PhasorSinglePhase.Generation;
-package ModelConstants 
+package ModelConstants  
 
 end ModelConstants;

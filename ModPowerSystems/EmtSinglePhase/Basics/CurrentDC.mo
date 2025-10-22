@@ -2,7 +2,7 @@ within ModPowerSystems.EmtSinglePhase.Basics;
 model CurrentDC
   extends ModPowerSystems.Base.Interfaces.RealValue.SinglePhase.OnePort;
 
-  parameter Modelica.SIunits.Current Inom = 10 "Nominal current";
+  parameter Modelica.Units.SI.Current Inom=10 "Nominal current";
 
 equation
   i = -Inom;

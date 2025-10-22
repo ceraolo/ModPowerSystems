@@ -3,25 +3,25 @@ model PiLine
   extends ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.TwoPinInit;
 
   parameter Real length = 20 "Length of line in km";
-  parameter Modelica.SIunits.Resistance r = 0.207 "Series Resistance per km";
-  parameter Modelica.SIunits.Reactance x = 0.121 "Series Reactance per km";
-  parameter Modelica.SIunits.Susceptance b = 40e-6 "Shunt Susceptance per km";
-  parameter Modelica.SIunits.Conductance g = 0.0 "Shunt Conductance per km";
+  parameter Modelica.Units.SI.Resistance r=0.207 "Series Resistance per km";
+  parameter Modelica.Units.SI.Reactance x=0.121 "Series Reactance per km";
+  parameter Modelica.Units.SI.Susceptance b=40e-6 "Shunt Susceptance per km";
+  parameter Modelica.Units.SI.Conductance g=0.0 "Shunt Conductance per km";
   parameter SI.Power Sr = 1 "rated apparent power";
-  parameter Modelica.SIunits.Current Imax=100 "maximal current";
+  parameter Modelica.Units.SI.Current Imax=100 "maximal current";
 
   outer ModPowerSystems.Base.System system;
 
   // Calculation of line parameters
-  Modelica.SIunits.Resistance R = r * length;
-  Modelica.SIunits.Reactance X = x * length;
-  Modelica.SIunits.Susceptance B = b * length;
-  Modelica.SIunits.Conductance G = g * length;
-  Modelica.SIunits.Inductance L = X / system.omega;
-  Modelica.SIunits.Capacitance C = B / system.omega;
+  Modelica.Units.SI.Resistance R=r*length;
+  Modelica.Units.SI.Reactance X=x*length;
+  Modelica.Units.SI.Susceptance B=b*length;
+  Modelica.Units.SI.Conductance G=g*length;
+  Modelica.Units.SI.Inductance L=X/system.omega;
+  Modelica.Units.SI.Capacitance C=B/system.omega;
 
-  Modelica.SIunits.ComplexCurrent i_rx;
-  Modelica.SIunits.Current Irel = I1/Imax*100;
+  Modelica.Units.SI.ComplexCurrent i_rx;
+  Modelica.Units.SI.Current Irel=I1/Imax*100;
 
   SI.Power S1 = 3*V1*I1 "apparent power into the component at P1";
   SI.Power S2 = 3*V2*I2 "apparent power out of the component at P2";

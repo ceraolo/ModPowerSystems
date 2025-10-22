@@ -1,5 +1,4 @@
 within ModPowerSystems.PhasorSinglePhase.Examples.BasicGrids;
-
 model Slack_RxLine_Breaker_PQLoad
   import ModPowerSystems;
   inner ModPowerSystems.Base.System system annotation(

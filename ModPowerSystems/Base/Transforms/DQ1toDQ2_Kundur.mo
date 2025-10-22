@@ -1,5 +1,4 @@
 within ModPowerSystems.Base.Transforms;
-
 function DQ1toDQ2_Kundur
   input Real f_dq1[2];
   input Real theta;

@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
-
 model Slack_RxLine_ZLoad_InverterPQCtrl
   ModPowerSystems.EmtThreePhase.Slack.Slack slack1(Vnom = 380, phiV = 0) annotation(
     Placement(visible = true, transformation(origin = {46, 32}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));

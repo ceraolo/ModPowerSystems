@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
-
 model Slack_PiLine_ZLoad
   ModPowerSystems.EmtThreePhase.Slack.Slack slack1 annotation(
     Placement(visible = true, transformation(origin = {0, 64}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));
@@ -23,4 +22,5 @@ equation
   connect(slack1.Plug1, busBar1.Plug1) annotation(
     Line(points = {{0, 54}, {0, 54}, {0, 32}, {0, 32}}));
 annotation(
-    experiment(StartTime = 0, StopTime = 1, Tolerance = 1e-6, Interval = 0.0002));end Slack_PiLine_ZLoad;
+    experiment(StartTime = 0, StopTime = 1, Tolerance = 1e-6, Interval = 0.0002));
+end Slack_PiLine_ZLoad;

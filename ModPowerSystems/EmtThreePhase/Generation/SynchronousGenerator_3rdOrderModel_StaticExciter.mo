@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Generation;
-
 model SynchronousGenerator_3rdOrderModel_StaticExciter
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePortGrounded;
   ModPowerSystems.EmtThreePhase.Generation.Controllers.ExciterSteadyState exciterSteadyState(H = H, L_l = L_l, L_lfd = L_lfd, L_md = L_md, L_mq = L_mq, P_nom = P_nom, R_fd = R_fd, R_s = R_s, V_nom = V_nom, f_nom = f_nom, p = p, theta_volt_init = Volt_theta / 180 * Modelica.Constants.pi, vt_init = Volt_abs / V_nom) annotation(
@@ -22,7 +21,7 @@ model SynchronousGenerator_3rdOrderModel_StaticExciter
   parameter Real Q_out = -8.17432e7 "Operating point active power [VA]";
   parameter Real Volt_abs = 25.2e3 "Voltage magnitude in steady state [V]";
   parameter Real Volt_theta = 10.5259 "Voltage angle in steady state [deg]";
-  
+
   Modelica.Blocks.Sources.Constant P_m(k = P_out) annotation(
     Placement(visible = true, transformation(extent = {{-94, 8}, {-84, 18}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Generation.SynchronousGenerator_3rdOrderModel synchronousGenerator_3rdOrderModel(H = H, L_l = L_l, L_lfd = L_lfd, L_md = L_md, L_mq = L_mq, P_init = P_out / P_nom, P_nom = P_nom, Q_init = Q_out / P_nom, R_fd = R_fd, R_s = R_s, V_nom = V_nom, f_nom = f_nom, p = p, theta_volt_init = Volt_theta / 180 * Modelica.Constants.pi, vt_init = Volt_abs / V_nom) annotation(

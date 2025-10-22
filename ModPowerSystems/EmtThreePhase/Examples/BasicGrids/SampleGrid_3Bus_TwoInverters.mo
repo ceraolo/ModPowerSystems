@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
-
 model SampleGrid_3Bus_TwoInverters
   ModPowerSystems.EmtThreePhase.Slack.Slack slack1(Vnom = 380, phiV = 0) annotation(
     Placement(visible = true, transformation(origin = {-22, 42}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));

@@ -16,7 +16,7 @@ equation
   else
     R = R_off;
   end if;
-  
+
   v = R.*i;
 
   annotation (Icon(graphics={

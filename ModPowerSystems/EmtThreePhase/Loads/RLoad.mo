@@ -1,10 +1,9 @@
 within ModPowerSystems.EmtThreePhase.Loads;
-
 model RLoad "Resistive Load"
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePortGroundedInit;
-  
+
   parameter SI.Resistance[3] R = {1037.8378,1037.8378,1037.8378};
-  
+
 equation
     v = R.*i;
 

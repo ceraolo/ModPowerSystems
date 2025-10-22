@@ -2,7 +2,7 @@ within ModPowerSystems.PhasorSinglePhase.Generation;
 model WindGenerator
   extends ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.OnePortGroundedInit;
 
-  parameter Modelica.SIunits.ActivePower Pnom = 500e3 "peak power";
+  parameter Modelica.Units.SI.ActivePower Pnom=500e3 "peak power";
   parameter Real v_s = 5 "start wind speed";
   parameter Real v_r = 10 "rated wind speed";
   parameter Real v_c = 17 "cut wind speed";

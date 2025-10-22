@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicCircuits;
-
 model VoltageSource_RL_Init
   inner ModPowerSystems.Base.System system
     annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
@@ -24,7 +23,7 @@ model VoltageSource_RL_Init
 equation
   connect(resistor.Plug1, inductor.Plug2)
     annotation (Line(points={{6,16},{14,16},{14,10}}, color={0,0,0}));
-  connect(ground.Plug1, voltageSource.Plug1) 
+  connect(ground.Plug1, voltageSource.Plug1)
    annotation (Line(points={{-52,-16},{
           -52,-16},{-52,16},{-42,16}}, color={0,0,0}));
   connect(inductor.Plug1, ground3.Plug1)

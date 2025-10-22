@@ -1,5 +1,5 @@
 within ModPowerSystems.DynPhasorSinglePhase;
-package Generation 
+package Generation  
   extends Modelica.Icons.Package;
 
 

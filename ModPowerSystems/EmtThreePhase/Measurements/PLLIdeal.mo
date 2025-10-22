@@ -1,7 +1,7 @@
 within ModPowerSystems.EmtThreePhase.Measurements;
 class PLLIdeal
-  parameter Modelica.SIunits.Frequency freq_nom = 50;
-  parameter Modelica.SIunits.Angle theta_0 = 0;
+  parameter Modelica.Units.SI.Frequency freq_nom=50;
+  parameter Modelica.Units.SI.Angle theta_0=0;
   Real omega;
   Modelica.Blocks.Interfaces.RealOutput theta annotation (
     Placement(visible = true, transformation(origin = {110, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {110, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));

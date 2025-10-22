@@ -1,4 +1,4 @@
-﻿within ModPowerSystems.PhasorSinglePhase.Storage;
+within ModPowerSystems.PhasorSinglePhase.Storage;
 model BatteryIdeal "Ideal battery storage with no losses"
   import ModPowerSystems;
   extends

@@ -4,7 +4,7 @@ model VoltageSource_RL
     annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
   ModPowerSystems.PhasorSinglePhase.Basics.VoltageSource voltageSource
     annotation (Placement(transformation(extent={{-42,6},{-22,26}})));
-  ModPowerSystems.PhasorSinglePhase.Basics.Resistor resistor 
+  ModPowerSystems.PhasorSinglePhase.Basics.Resistor resistor
    annotation (
       Placement(transformation(
         extent={{10,-10},{-10,10}},
@@ -12,7 +12,7 @@ model VoltageSource_RL
         origin={-4,16})));
   ModPowerSystems.PhasorSinglePhase.Basics.Ground ground
     annotation (Placement(transformation(extent={{-62,-36},{-42,-16}})));
-  ModPowerSystems.PhasorSinglePhase.Basics.Inductor inductor(L = 0.01)  
+  ModPowerSystems.PhasorSinglePhase.Basics.Inductor inductor(L = 0.01)
    annotation (
       Placement(transformation(
         extent={{-10,-10},{10,10}},
@@ -23,7 +23,7 @@ model VoltageSource_RL
 equation
   connect(resistor.Pin1, inductor.Pin2)
     annotation (Line(points={{6,16},{14,16},{14,10}}, color={0,0,0}));
-  connect(ground.Pin1, voltageSource.Pin1) 
+  connect(ground.Pin1, voltageSource.Pin1)
    annotation (Line(points={{-52,-16},{
           -52,-16},{-52,16},{-42,16}}, color={0,0,0}));
   connect(inductor.Pin1, ground3.Pin1)

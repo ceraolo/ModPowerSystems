@@ -7,8 +7,7 @@ model CHP
 
     // Solar generation constants for model
   replaceable ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.RecordViessmannSFH model_data constrainedby
-    ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.BaseRecord
-                                                                                           annotation(choices(choice(redeclare ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.RecordViessmannSFH model_data "Viessmann SFH"),choice(redeclare ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.RecordViessmannMFHLow model_data "Viessmann MFH Low Demand"),choice(redeclare ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.RecordViessmannMFHHigh model_data "Viessmann MFH High Demand")));
+    ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.BaseRecord            annotation(choices(choice(redeclare ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.RecordViessmannSFH model_data "Viessmann SFH"),choice(redeclare ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.RecordViessmannMFHLow model_data "Viessmann MFH Low Demand"),choice(redeclare ModPowerSystems.PhasorSinglePhase.Generation.ModelConstants.CHPs.RecordViessmannMFHHigh model_data "Viessmann MFH High Demand")));
 
   parameter Real ctrl = 0 "kind of control (0->according to thermal demand, 1->according to input)";
   parameter Real ctrl_ut = 0 "utilization of CHP [0,1], to be replaced by input!";
@@ -99,4 +98,3 @@ equation
           lineColor={0,0,0},
           textString="%name")}));
 end CHP;
-

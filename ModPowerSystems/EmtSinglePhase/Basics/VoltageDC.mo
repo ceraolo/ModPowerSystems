@@ -2,7 +2,8 @@ within ModPowerSystems.EmtSinglePhase.Basics;
 model VoltageDC
   extends ModPowerSystems.Base.Interfaces.RealValue.SinglePhase.OnePort;
 
-  parameter Modelica.SIunits.Voltage Vnom = 10 "Nominal peak voltage phase-to-neutral";
+  parameter Modelica.Units.SI.Voltage Vnom=10
+    "Nominal peak voltage phase-to-neutral";
 
 equation
   v = Vnom;

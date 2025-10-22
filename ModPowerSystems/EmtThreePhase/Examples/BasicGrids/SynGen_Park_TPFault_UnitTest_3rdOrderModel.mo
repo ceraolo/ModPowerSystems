@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
-
 model SynGen_Park_TPFault_UnitTest_3rdOrderModel
   ModPowerSystems.EmtThreePhase.Generation.SynchronousGenerator_3rdOrderModel synchronousGenerator_Park annotation(
     Placement(visible = true, transformation( extent = {{-50, -20}, {-30, 0}}, rotation = 0)));

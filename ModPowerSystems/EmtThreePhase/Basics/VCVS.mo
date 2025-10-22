@@ -1,5 +1,4 @@
 within ModPowerSystems.EmtThreePhase.Basics;
-
 model VCVS
   extends ModPowerSystems.Base.Interfaces.RealValue.ThreePhase.OnePort;
   parameter SI.Angle phiV = 0 "Initial Voltage Angle";

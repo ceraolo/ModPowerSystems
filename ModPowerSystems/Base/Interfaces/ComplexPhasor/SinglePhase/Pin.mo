@@ -1,7 +1,8 @@
 within ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase;
 connector Pin "Pin/Terminal with voltage potential and current flow"
-  Modelica.SIunits.ComplexVoltage v "Complex potential at the node";
-  flow Modelica.SIunits.ComplexCurrent i "Complex current flowing into the pin";
+  Modelica.Units.SI.ComplexVoltage v "Complex potential at the node";
+  flow Modelica.Units.SI.ComplexCurrent i
+    "Complex current flowing into the pin";
   annotation (
     Icon(
       coordinateSystem(

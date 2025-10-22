@@ -1,5 +1,5 @@
 within ModPowerSystems.PhasorSinglePhase;
-package Connections 
+package Connections  
   extends Modelica.Icons.Package;
 
 end Connections;
