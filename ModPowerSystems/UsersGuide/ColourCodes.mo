@@ -1,4 +1,5 @@
 within ModPowerSystems.UsersGuide;
+<<<<<<< HEAD
 class ColourCodes "Colour codes"
   extends Modelica.Icons.Information;
   annotation(
