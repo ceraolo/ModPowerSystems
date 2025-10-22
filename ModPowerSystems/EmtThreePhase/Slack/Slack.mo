@@ -23,7 +23,9 @@ equation
           Rectangle(
             extent={{-60,60},{60,-60}},
             lineColor={0,0,0},
-            pattern=LinePattern.Solid),
+            pattern=LinePattern.Solid,
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),
           Line(
             points={{20,60},{60,20}},
             pattern=LinePattern.Solid),
@@ -59,5 +61,6 @@ equation
             pattern=LinePattern.Solid),
           Text(
             extent={{-100,-60},{100,-100}},
-            textString="%name")}));
+            textString="%name",
+          textColor={0,0,255})}));
 end Slack;

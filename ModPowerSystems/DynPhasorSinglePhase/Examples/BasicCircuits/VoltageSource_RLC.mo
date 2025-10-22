@@ -45,5 +45,6 @@ equation
           16},{-2,16},{-2,10}},    color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
         coordinateSystem(preserveAspectRatio=false,   extent={{-60,-40},{60,40}},
-        grid={2,1})));
+        grid={2,1})),
+    experiment(StopTime=0.1, __Dymola_Algorithm="Dassl"));
 end VoltageSource_RLC;

@@ -22,5 +22,11 @@ equation
     Icon(
       coordinateSystem(
         preserveAspectRatio=false, initialScale = 0.1),
-      graphics={Line(points = {{100, 0}, {60, 0}}), Text(extent = {{100, 20}, {-100, 60}}, textString = "%name"), Rectangle(extent = {{-60, 20}, {60, -20}}), Line(points = {{-60, 0}, {-100, 0}})}));
+      graphics={Line(points = {{100, 0}, {60, 0}}, color={0,0,255}),
+                                                    Text(extent = {{100, 20}, {-100, 60}}, textString = "%name",
+          textColor={0,0,255}),                                                                                   Rectangle(extent = {{-60, 20}, {60, -20}},
+          lineColor={0,0,255},
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),                                                                                                                     Line(points = {{-60, 0}, {-100, 0}}, color=
+              {0,0,255})}));
 end RxLine;

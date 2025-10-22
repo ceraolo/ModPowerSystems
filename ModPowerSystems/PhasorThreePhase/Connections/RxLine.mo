@@ -29,14 +29,17 @@ equation
       graphics={
         Line(
           points={{100,0},{60,0}},
-          color={0,0,0}),
+          color={0,128,255}),
         Text(
-          extent={{100,20},{-100,60}},
-          textString="%name"),
+          extent={{100,32},{-100,72}},
+          textString="%name",
+          textColor={0,0,255}),
         Rectangle(
           extent={{-60,20},{60,-20}},
-          lineColor={0,0,0}),
+          lineColor={0,128,255},
+          fillPattern=FillPattern.Solid,
+          fillColor={255,255,255}),
         Line(
           points={{-60,0},{-100,0}},
-          color={0,0,0})}));
+          color={0,128,255})}));
 end RxLine;

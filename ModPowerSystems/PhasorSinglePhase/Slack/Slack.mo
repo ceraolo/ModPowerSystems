@@ -31,7 +31,9 @@ equation
           Rectangle(
             extent={{-60,60},{60,-60}},
             lineColor={0,0,0},
-            pattern=LinePattern.Solid),
+            pattern=LinePattern.Solid,
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),
           Line(
             points={{20,60},{60,20}},
             color={0,0,0},
@@ -78,6 +80,7 @@ equation
             pattern=LinePattern.Solid),
           Text(
             extent={{-100,-60},{100,-100}},
-            textString="%name")}), Diagram(coordinateSystem(preserveAspectRatio=
+            textString="%name",
+          textColor={0,0,255})}),  Diagram(coordinateSystem(preserveAspectRatio=
            false, extent={{-100,-100},{100,100}})));
 end Slack;

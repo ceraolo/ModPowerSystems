@@ -26,9 +26,10 @@ equation
         Polygon(
           points={{0,-40},{-20,20},{20,20}},
           lineColor={0,0,0},
-          fillPattern=FillPattern.Sphere,
-          fillColor={0,0,0}),
+          fillPattern=FillPattern.Solid,
+          fillColor={0,128,255}),
         Text(
           extent={{100,-100},{-100,-60}},
-          textString = "%name")}));
+          textString = "%name",
+          textColor={0,0,255})}));
 end ZLoad;

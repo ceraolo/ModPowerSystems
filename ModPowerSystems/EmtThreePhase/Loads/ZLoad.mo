@@ -22,5 +22,10 @@ equation
    Icon(
      coordinateSystem(
         preserveAspectRatio=false, initialScale = 0.1),
-      graphics={Line(points = {{0, 100}, {0, 20}}), Polygon(fillPattern = FillPattern.Sphere, points = {{0, -40}, {-20, 20}, {20, 20}, {0, -40}}), Text(extent = {{-100, -100}, {100, -60}}, textString = "%name")}));
+      graphics={Line(points = {{0, 100}, {0, 20}}, color={0,0,255}),
+                                                    Polygon(fillPattern=
+              FillPattern.Solid,                                                              points = {{0, -40}, {-20, 20}, {20, 20}, {0, -40}},
+          fillColor={0,0,255}),                                                                                                                    Text(extent={{-100,
+              -96},{100,-56}},                                                                                                                                                               textString = "%name",
+          textColor={0,0,255})}));
 end ZLoad;

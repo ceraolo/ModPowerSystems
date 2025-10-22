@@ -112,13 +112,19 @@ equation
   der(theta) = omega_e*omega_b;
 
   annotation (Icon(coordinateSystem(preserveAspectRatio=false), graphics={
-        Ellipse(extent={{-60,58},{60,-62}}, lineColor={0,0,0}),
-        Ellipse(extent={{-40,38},{40,-42}}, lineColor={0,0,0}),
+        Ellipse(extent={{-80,80},{80,-80}}, lineColor={0,0,0},
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),
+        Ellipse(extent={{-60,60},{60,-60}}, lineColor={0,0,0}),
         Text(
           extent={{-30,26},{30,-26}},
           lineColor={0,0,0},
           textString="SG"),
-        Line(points={{0,94},{0,58}}, color={0,0,0})}),           Diagram(
+        Line(points={{0,94},{0,80}}, color={0,0,255}),
+        Text(
+          extent={{96,-126},{-104,-86}},
+          textString = "%name",
+          textColor={0,0,255})}),                                Diagram(
         coordinateSystem(preserveAspectRatio=false)),
     Documentation(info="<html>
 <p>References:</p>

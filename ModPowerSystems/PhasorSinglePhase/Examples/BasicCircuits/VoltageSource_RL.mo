@@ -10,16 +10,16 @@ model VoltageSource_RL
   ModPowerSystems.PhasorSinglePhase.Basics.Ground ground annotation(
     Placement(transformation(origin = {4, 0}, extent = {{-62, -36}, {-42, -16}})));
   ModPowerSystems.PhasorSinglePhase.Basics.Inductor inductor(L = 0.01) annotation(
-    Placement(transformation(origin = {18, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+    Placement(transformation(origin={20,0},    extent = {{-10, -10}, {10, 10}}, rotation = 90)));
   ModPowerSystems.PhasorSinglePhase.Basics.Ground ground3 annotation(
-    Placement(transformation(origin = {4, 0}, extent = {{4, -38}, {24, -18}})));
+    Placement(transformation(origin={6,0},    extent = {{4, -38}, {24, -18}})));
 equation
   connect(resistor.Pin1, inductor.Pin2) annotation(
-    Line(points = {{10, 16}, {18, 16}, {18, 10}}));
+    Line(points={{10,16},{20,16},{20,10}}));
   connect(ground.Pin1, voltageSource.Pin1) annotation(
     Line(points = {{-48, -16}, {-48, -16}, {-48, 16}, {-38, 16}}));
   connect(inductor.Pin1, ground3.Pin1) annotation(
-    Line(points = {{18, -10}, {18, -14}, {18, -18}}));
+    Line(points={{20,-10},{20,-18}}));
   connect(voltageSource.Pin2, resistor.Pin2) annotation(
     Line(points = {{-18, 16}, {-14, 16}, {-10, 16}}));
   annotation(

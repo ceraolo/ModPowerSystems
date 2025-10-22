@@ -21,8 +21,9 @@ equation
         grid={2,2}),
       graphics={
         Text(
-          extent={{0,120},{-100,160}},
-          textString = "%name"),
+          extent={{-4,118},{-104,158}},
+          textString="%name",
+          textColor={0,0,255}),
         Rectangle(
           extent={{-80,110},{80,90}},
           lineColor={0,0,0},
