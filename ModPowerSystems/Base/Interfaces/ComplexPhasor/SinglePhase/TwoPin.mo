@@ -4,7 +4,7 @@ partial model TwoPin
 
   ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.Pin Pin1
     annotation (Placement(transformation(extent={{-110,-10},{-90,10}})));
-  ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.Pin Pin2
+  ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.NegPin Pin2
     annotation (Placement(transformation(extent={{90,-10},{110,10}})));
 
 // two pin potentials and currents
