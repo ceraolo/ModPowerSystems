@@ -9,7 +9,7 @@ connector Plug
         grid={2,2}), graphics={Ellipse(
           extent={{-100,100},{100,-98}},
           lineColor={0,0,0},
-          fillColor={0,0,0},
+          fillColor={85,170,255},
           fillPattern=FillPattern.Solid)}),
     Diagram(
       coordinateSystem(
@@ -18,7 +18,7 @@ connector Plug
         grid={2,2}), graphics={Ellipse(
           extent={{-100,100},{100,-100}},
           lineColor={0,0,0},
-          fillColor={0,0,0},
+          fillColor={85,170,255},
           fillPattern=FillPattern.Solid)}),
     Documentation(
       info="

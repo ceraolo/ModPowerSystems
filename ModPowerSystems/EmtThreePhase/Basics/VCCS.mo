@@ -16,5 +16,26 @@ equation
      i[3] = Vi*cos(system.theta + phiV - phaseShift[3]);
 
 annotation (
-    Icon(graphics={  Ellipse(origin = {1, 1}, extent = {{-37, 39}, {37, -39}}, endAngle = 360), Line(origin = {-66, 0}, points = {{-30, 0}, {30, 0}, {30, 0}}), Line(origin = {67, 0}, points = {{29, 0}, {-29, 0}}), Line(origin = {-0.255164, 70}, points = {{0.255164, 30}, {0.255164, -30}}), Line(origin = {1.23095, -0.24619}, points = {{-20, 0}, {20, 0}}), Line(origin = {-13.9446, -1.13226}, rotation = 180, points = {{-3.70892, 6.0137}, {4.29108, -1.98627}, {-3.70892, -9.98627}})}, coordinateSystem(initialScale = 0.1)));
+    Icon(graphics={                                            Ellipse(extent={{50,52},
+              {-48,-50}},        lineColor={0,0,255},
+          rotation=360,
+          fillPattern=FillPattern.Solid,
+          fillColor={255,255,255}),                                                             Line(origin = {-66, 0}, points={{-30,0},
+              {18,0}},
+          color={0,0,255}),                                                                                                                                     Line(origin = {67, 0}, points={{29,0},{
+              -17,0}},
+          color={0,0,255}),                                                                                                                                                                                           Line(origin = {-0.255164, 70}, points={{
+              0.255164,30},{0.255164,-18}},
+          color={0,0,255}),                                                                                                                                                                                                        Line(
+          origin={0,0},
+          points={{-20,0},{20,0}},
+          color={0,0,255}),                                                                                                                                                                                                        Line(
+          origin={-15,-2},
+          rotation=180,
+          points={{-3.70892,6.0137},{4.29108,-1.98627},{-3.70892,-9.98627}},
+          color={0,0,255}),
+        Text(
+          extent={{-148,-62},{152,-102}},
+          textString="%name",
+          textColor={0,0,255})},                                                                                                                                                                                                        coordinateSystem(initialScale = 0.1)));
 end VCCS;

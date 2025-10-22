@@ -1,5 +1,5 @@
 within ModPowerSystems.Base.Interfaces.RealValue.SinglePhase;
-connector Pin "Pin/Terminal with voltage potential and current flow"
+connector NegPin "Pin/Terminal with voltage potential and current flow"
   SI.Voltage v "Potential at the pin";
   flow SI.Current i "Current flowing into the pin";
 
@@ -13,7 +13,7 @@ connector Pin "Pin/Terminal with voltage potential and current flow"
           Rectangle(
             extent={{100,100},{-100,-100}},
             fillPattern=FillPattern.Solid,
-          fillColor={0,0,255})}),
+          fillColor={255,255,255})}),
     Diagram(
       coordinateSystem(
         preserveAspectRatio=false,
@@ -23,11 +23,11 @@ connector Pin "Pin/Terminal with voltage potential and current flow"
           Rectangle(
             extent={{100,100},{-100,-100}},
             fillPattern=FillPattern.Solid,
-          fillColor={0,0,255})}),
+          fillColor={255,255,255})}),
     Documentation(
       info="
         <html>         
             The potential of this connector is the complex voltage and the flow variable is the complex current.          
         </html>"));
 
-end Pin;
+end NegPin;

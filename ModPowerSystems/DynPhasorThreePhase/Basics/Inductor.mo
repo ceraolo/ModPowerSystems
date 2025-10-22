@@ -12,13 +12,13 @@ equation
 
   annotation (Icon(graphics={
         Line(points={{-40,0},{-98,0}},
-                                     color={162,29,33}),
+                                     color={0,0,0}),
         Line(points={{8,58}}, color={0,0,0}),
-        Line(points={{96,0},{38,0}}, color={162,29,33}),
+        Line(points={{96,0},{38,0}}, color={0,0,0}),
         Rectangle(
           extent={{-72,32},{72,-32}},
-          lineColor={162,29,33},
-          fillColor={162,29,33},
+          lineColor={0,0,0},
+          fillColor={0,0,0},
           fillPattern=FillPattern.Solid),
         Text(
           extent={{-150,86},{150,46}},

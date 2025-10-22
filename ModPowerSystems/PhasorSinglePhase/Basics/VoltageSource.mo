@@ -15,9 +15,9 @@ equation
           preserveAspectRatio=false,
           extent={{-100,-100},{100,100}},
           grid={2,2}), graphics={
-          Line(points={{-100,0},{-40,0}}, color={0,0,0}),
-          Line(points={{40,0},{100,0}}, color={0,0,0}),        Ellipse(extent={{50,52},
-              {-48,-50}},        lineColor={0,0,0},
+          Line(points={{-100,0},{-40,0}}, color={0,128,255}),
+          Line(points={{40,0},{100,0}}, color={0,128,255}),    Ellipse(extent={{50,52},
+              {-48,-50}},        lineColor={0,128,255},
           rotation=360,
           fillPattern=FillPattern.Solid,
           fillColor={255,255,255}),

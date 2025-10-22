@@ -9,22 +9,24 @@ equation
   v = Vnom;
 
   annotation (Icon(coordinateSystem(preserveAspectRatio=false), graphics={
-                                                               Ellipse(extent={{
-              50,50},{-50,-50}}, lineColor={0,0,0}),
-        Line(points={{-100,0},{-50,0}}, color={0,0,0}),
-        Line(points={{96,0},{50,0}}, color={0,0,0}),
-        Line(points={{28,-4}}, color={0,0,0}),
-        Rectangle(
-          extent={{-12,20},{-10,-20}},
-          lineColor={0,0,0},
-          lineThickness=0.5,
-          fillColor={0,0,0},
+                                                               Ellipse(extent={{54,50},
+              {-46,-50}},        lineColor={0,0,255},
+          fillColor={255,255,255},
           fillPattern=FillPattern.Solid),
-        Rectangle(
-          extent={{10,20},{12,-20}},
-          lineColor={0,0,0},
-          lineThickness=0.5,
-          fillColor={0,0,0},
-          fillPattern=FillPattern.Solid)}),                      Diagram(
+        Line(points={{-96,0},{-46,0}},  color={0,0,255}),
+        Line(points={{100,0},{54,0}},color={0,0,255}),
+        Line(points={{-2.22045e-016,-1.35963e-032},{24,-3.67395e-016}},
+                                      color={0,0,255},
+          origin={-26,-12},
+          rotation=90),
+        Line(points={{32,-4}}, color={0,0,255}),
+        Line(points={{-2.22045e-016,-1.35963e-032},{24,-3.67395e-016}},
+                                      color={0,0,255},
+          rotation=180,
+          origin={-14,0}),
+        Text(
+          extent={{-150,100},{150,60}},
+          textString="%name",
+          textColor={0,0,255})}),                                Diagram(
         coordinateSystem(preserveAspectRatio=false)));
 end VoltageDC;

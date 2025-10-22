@@ -7,20 +7,20 @@ connector Plug
       coordinateSystem(
         preserveAspectRatio=false,
         extent={{-100,-100},{100,100}},
-        grid={2,2}),
-        graphics={
-          Rectangle(
-            extent={{50,50},{-50,-50}},
-            fillPattern=FillPattern.Solid)}),
+        grid={2,2}), graphics={Ellipse(
+          extent={{-100,100},{100,-100}},
+          lineColor={0,0,255},
+          fillColor={0,0,255},
+          fillPattern=FillPattern.Solid)}),
     Diagram(
       coordinateSystem(
         preserveAspectRatio=false,
         extent={{-100,-100},{100,100}},
-        grid={2,2}),
-        graphics={
-          Rectangle(
-            extent={{50,50},{-50,-50}},
-            fillPattern=FillPattern.Solid)}),
+        grid={2,2}), graphics={Ellipse(
+          extent={{-100,100},{100,-100}},
+          lineColor={0,0,255},
+          fillColor={0,0,255},
+          fillPattern=FillPattern.Solid)}),
     Documentation(
       info="
         <html>         

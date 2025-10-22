@@ -9,12 +9,17 @@ equation
 
   annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}})), Icon(graphics={
-        Line(points={{-40,0},{-98,0}},
-                                     color={0,0,0}),
+        Line(points={{8,58}}, color={0,0,0}),
+        Line(points={{-42,0},{-100,0}},
+                                     color={0,0,255}),
+        Line(points={{94,0},{36,0}}, color={0,0,255}),
         Rectangle(
-          extent={{-40,20},{40,-20}},
-          lineColor={0,0,0},
-          fillColor={0,0,0},
+          extent={{-72,32},{72,-32}},
+          lineColor={0,0,255},
+          fillColor={0,0,255},
           fillPattern=FillPattern.Solid),
-        Line(points={{96,0},{38,0}}, color={0,0,0})}));
+        Text(
+          extent={{-150,86},{150,46}},
+          textString="%name",
+          textColor={0,0,255})}));
 end Inductor;
