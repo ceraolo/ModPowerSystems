@@ -20,10 +20,6 @@ equation
             fillColor={0,0,0},
             fillPattern=FillPattern.Solid),
         Text(
-          extent={{110,78},{410,38}},
-          textString="%name",
-          textColor={0,0,255}),
-        Text(
           extent={{-148,92},{152,52}},
           textString="%name",
           textColor={0,0,255})}));
