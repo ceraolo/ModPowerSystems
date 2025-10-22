@@ -17,13 +17,13 @@ equation
           Line(points={{8,58}}, color={0,0,0}),
           Line(points={{100,0},{12,0}},color={0,0,0}),
           Rectangle(
-            extent={{-12,38},{-10,-34}},
+            extent={{-12,36},{-10,-36}},
             lineColor={0,0,0},
             lineThickness=1,
             fillColor={0,0,0},
             fillPattern=FillPattern.Solid),
           Rectangle(
-            extent={{10,38},{12,-34}},
+            extent={{10,36},{12,-36}},
             lineColor={0,0,0},
             lineThickness=1,
             fillColor={0,0,0},

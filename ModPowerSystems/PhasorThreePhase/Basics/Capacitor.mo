@@ -11,20 +11,24 @@ equation
   i[:].im = C[:] .* der(v[:].im) + ones(3)./X[:] .* v[:].re;
 
   annotation (Icon(graphics={
-        Line(points={{-14,0},{-100,0}},
+        Line(points={{-12,0},{-98,0}},
                                      color={0,0,0}),
         Line(points={{8,58}}, color={0,0,0}),
         Line(points={{100,0},{12,0}},color={0,0,0}),
-        Rectangle(
-          extent={{-14,32},{-12,-32}},
-          lineColor={0,0,0},
-          lineThickness=1,
-          fillColor={0,0,0},
-          fillPattern=FillPattern.Solid),
-        Rectangle(
-          extent={{10,32},{12,-32}},
-          lineColor={0,0,0},
-          lineThickness=1,
-          fillColor={0,0,0},
-          fillPattern=FillPattern.Solid)}));
+        Text(
+          extent={{-150,92},{150,52}},
+          textString="%name",
+          textColor={0,0,255}),
+          Rectangle(
+            extent={{-12,36},{-10,-36}},
+            lineColor={0,0,0},
+            lineThickness=1,
+            fillColor={0,0,0},
+            fillPattern=FillPattern.Solid),
+          Rectangle(
+            extent={{10,36},{12,-36}},
+            lineColor={0,0,0},
+            lineThickness=1,
+            fillColor={0,0,0},
+            fillPattern=FillPattern.Solid)}));
 end Capacitor;
