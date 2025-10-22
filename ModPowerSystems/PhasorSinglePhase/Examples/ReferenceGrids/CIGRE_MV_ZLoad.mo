@@ -315,7 +315,7 @@ model CIGRE_MV_ZLoad
         rotation=180,
         origin={-38,-112})));
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-160,220},{-120,260}})));
+    annotation (Placement(transformation(origin = {160, -90}, extent = {{-160, 220}, {-120, 260}})));
 equation
   connect(slack.Pin1,N0.Pin1) annotation(Line(points={{34,204},{34,196}},      color = {0, 0, 0}, smooth = Smooth.None));
   connect(Tr1.Pin1,N0.Pin1) annotation(Line(points={{-74,176},{-74,192},{34,192},
@@ -390,6 +390,6 @@ equation
   connect(Load5_H.Pin1,N5.Pin1) annotation (Line(points={{-98,-30},{-98,-30},{-88,
           -30},{-88,-24}},
                       color={0,0,0}));
-  annotation (Diagram(coordinateSystem(extent={{-160,-160},{180,260}})), Icon(
+  annotation (Diagram(coordinateSystem(extent={{-120,220},{160,-140}})), Icon(
         coordinateSystem(extent={{-160,-160},{180,260}})));
 end CIGRE_MV_ZLoad;

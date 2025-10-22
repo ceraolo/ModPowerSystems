@@ -162,7 +162,7 @@ model WSCC_9Bus_PQLoad
         rotation=0)));
   inner ModPowerSystems.Base.System system(freq_nom=60)
                                            annotation (
-    Placement(visible = true, transformation(origin = {-144, 48}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-90, 44}, extent = {{-10, -10}, {10, 10}})));
 equation
   connect(GEN1.Pin1, BUS1.Pin1) annotation (Line(points={{4,-58},{4,-52}}));
   connect(TR14.Pin1, BUS1.Pin1) annotation (Line(points={{4,-44},{4,-52}}));
@@ -211,7 +211,7 @@ equation
   connect(LINE78.Pin1, TR27.Pin2) annotation (Line(points={{-26,94},{-40,94},{
           -40,75},{-38,75}}, color={0,0,0}));
   annotation (
-    Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-160,-80},{160,
-            100}})),
+    Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-120,100},{140,
+            -80}})),
     Icon(coordinateSystem(extent={{-160,-80},{160,100}})));
 end WSCC_9Bus_PQLoad;

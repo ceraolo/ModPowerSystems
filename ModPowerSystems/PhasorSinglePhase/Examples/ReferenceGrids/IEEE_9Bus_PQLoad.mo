@@ -36,7 +36,7 @@ model IEEE_9Bus_PQLoad
     Placement(visible = true, transformation(origin = {-118, 72}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   inner ModPowerSystems.Base.System system(freq_nom=60)
                                            annotation (
-    Placement(visible = true, transformation(origin = {-124, 38}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-90, 54}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.PhasorSinglePhase.Transformers.Transformer TR02_06(Sr = 100e6, URr = 0, Ukr = 0.66, Vnom1 = 10e3, Vnom2 = 10e3) annotation (
     Placement(visible = true, transformation(origin = {-70, -52}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.PhasorSinglePhase.Transformers.Transformer TR03_08(Sr = 100e6, URr = 0, Ukr = 0.2, Vnom1 = 10e3, Vnom2 = 10e3) annotation (
@@ -127,6 +127,6 @@ equation
   connect(LOAD09.Pin1, TR04_09.Pin2) annotation (
     Line(points = {{146, 64}, {136, 64}, {136, 72}, {146, 72}}, color = {0, 0, 0}));
   annotation (
-    Diagram(coordinateSystem(extent = {{-140, -100}, {200, 100}}, preserveAspectRatio = false)),
+    Diagram(coordinateSystem(extent = {{-140, 100}, {200, -80}}, preserveAspectRatio = false)),
     Icon(coordinateSystem(extent = {{-140, -100}, {200, 100}})));
 end IEEE_9Bus_PQLoad;

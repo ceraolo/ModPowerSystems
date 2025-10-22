@@ -336,7 +336,7 @@ model CIGRE_MV_PQLoadNormProfilesNoTransformer
         rotation=180,
         origin={-38,-112})));
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-160,220},{-120,260}})));
+    annotation (Placement(transformation(origin = {160, -132}, extent = {{-160, 220}, {-120, 260}})));
 equation
   connect(Load1_I.Pin1,N1.Pin1)
    annotation(Line(points={{-36,142},{-74,142},{-74,146}},                                color = {0, 0, 0}, smooth = Smooth.None));
@@ -429,7 +429,7 @@ equation
           148},{-74,148},{-74,146}}, color={0,0,0}));
   connect(N12.Pin1, N1.Pin1) annotation (Line(points={{106,146},{106,152},{32,
           152},{32,150},{34,150},{34,148},{-74,148},{-74,146}}, color={0,0,0}));
-  annotation (Diagram(coordinateSystem(extent={{-160,-160},{180,260}},
+  annotation (Diagram(coordinateSystem(extent={{-120,220},{160,-140}},
           preserveAspectRatio=false)),                                   Icon(
         coordinateSystem(extent={{-160,-160},{180,260}})),
     experiment(StopTime=86400, Interval=60));

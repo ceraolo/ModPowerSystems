@@ -2,8 +2,7 @@ within ModPowerSystems.PhasorSinglePhase.Examples.ReferenceGrids;
 model IEEE_European_LV_HouseholdLoad
 
   inner ModPowerSystems.Base.System system(freq_nom(displayUnit="Hz") = 50.0)
-    annotation (Placement(visible=true, transformation(extent={{0.0,-30.0},{
-            30.0,0.0}}, rotation=0)));
+    annotation (Placement(transformation(origin = {52, -114}, extent = {{0, -30}, {30, 0}})));
 ModPowerSystems.PhasorSinglePhase.Connections.BusBar N104(Vnom = 400)
 annotation (Placement(visible = true, transformation(extent = {{-8.0,-8.0},{8.0,8.0}}, rotation = 0, origin = {528.0,-268.0})));
 ModPowerSystems.PhasorSinglePhase.Connections.BusBar N126(Vnom = 400)
@@ -1299,5 +1298,5 @@ annotation(Line(points={{115.2,-30},{103.2,-30},{103.2,-47}},            color =
 annotation(Line(points={{115.2,-30},{115.2,-40.6},{112,-40.6}},          color = {0,0,0}, smooth = Smooth.None));
   connect(SL.Pin1, N1.Pin1)
     annotation (Line(points={{45,-11.8},{56,-11.8},{56,-40}}, color={0,0,0}));
-annotation(Diagram(coordinateSystem(extent={{0,-340},{900,0}})),               Icon(coordinateSystem(extent = {{160.0,-160.0},{180.0,260.0}})));
+annotation(Diagram(coordinateSystem(extent={{20,0},{880,-300}})),               Icon(coordinateSystem(extent = {{160.0,-160.0},{180.0,260.0}})));
 end IEEE_European_LV_HouseholdLoad;
