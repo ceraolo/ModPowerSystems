@@ -4,7 +4,7 @@ partial model OnePort
 
   ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.Pin Pin1
     annotation (Placement(transformation(extent={{-110,-10},{-90,10}})));
-  ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.Pin Pin2
+  ModPowerSystems.Base.Interfaces.ComplexPhasor.SinglePhase.negPin Pin2
     annotation (Placement(transformation(extent={{90,-10},{110,10}})));
 
 // port voltage and current
@@ -47,7 +47,7 @@ equation
   annotation (
     Icon(
       coordinateSystem(
-        preserveAspectRatio=false, initialScale = 0.1), graphics={Text(origin = {-166, -4}, extent = {{74, 24}, {94, 4}}, textString = "+")}),      Documentation(info="<html>
+        preserveAspectRatio=false, initialScale = 0.1)),                                                                                            Documentation(info="<html>
 <p>The model represents a one port with the following definitions:</p>
 <p><img src=\"modelica://ModPowerSystems/Resources/Images/OnePort.png\"/></p>
 <p>Note, that a one port must meet the port condition: input and output current must be equal.</p>
