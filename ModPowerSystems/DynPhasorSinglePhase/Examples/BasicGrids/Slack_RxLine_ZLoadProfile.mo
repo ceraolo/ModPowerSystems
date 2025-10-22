@@ -5,7 +5,7 @@ model Slack_RxLine_ZLoadProfile
   ModPowerSystems.DynPhasorSinglePhase.Slack.Slack slack(Vnom = 24e3, phiV(displayUnit = "deg") = 0) annotation (
     Placement(visible = true, transformation(origin = {0, 26}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));
   inner Base.System system(freq_nom = 60) annotation (
-    Placement(transformation(extent = {{-70, 54}, {-50, 74}})));
+    Placement(transformation(origin = {32, -40}, extent = {{-70, 54}, {-50, 74}})));
   ModPowerSystems.DynPhasorSinglePhase.Connections.RxLine rxLine1(length = 1, r = 0.05, x = 0.1, Vnom = 24e3) annotation (
     Placement(visible = true, transformation(origin = {0, -8}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
   ModPowerSystems.DynPhasorSinglePhase.Connections.BusBar N0(Vnom = 24e3) annotation (
@@ -25,7 +25,7 @@ equation
     Line(points = {{0, -18}, {0, -28}}));
   annotation (
     Icon(coordinateSystem(preserveAspectRatio = false)),
-    Diagram(coordinateSystem(preserveAspectRatio = false)),
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-40, 40}, {20, -60}})),
     experiment(
       StartTime=4,
       StopTime=6,

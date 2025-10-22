@@ -32,5 +32,5 @@ equation
   connect(currentDC.Pin2, resistor.Pin2) annotation (Line(points={{-52,6},{-52,
           10},{-20,10},{-20,6}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-60, 20}, {20, -40}})));
 end CurrentSourceDC_RC;

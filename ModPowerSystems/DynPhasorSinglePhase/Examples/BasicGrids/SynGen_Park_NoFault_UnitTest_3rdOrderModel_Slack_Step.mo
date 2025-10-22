@@ -11,7 +11,7 @@ model SynGen_Park_NoFault_UnitTest_3rdOrderModel_Slack_Step
         rotation=180,
         origin={0,20})));
   inner Base.System system(freq_nom=60)
-    annotation (Placement(transformation(extent={{-70,54},{-50,74}})));
+    annotation (Placement(transformation(origin = {34, -44}, extent = {{-70, 54}, {-50, 74}})));
   Generation.Controllers.ExciterSteadyState exciterSteadyState
     annotation (Placement(transformation(extent={{-30,-38},{-20,-26}})));
   Modelica.Blocks.Sources.Constant Q0(k=0)
@@ -36,7 +36,7 @@ equation
   connect(P0.y, exciterSteadyState.P) annotation (Line(points={{-51.5,-27},{-46,
           -27},{-46,-29.6},{-31,-29.6}}, color={0,0,127}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)),
+        coordinateSystem(preserveAspectRatio = false, extent = {{-60, 40}, {20, -60}})),
     experiment(
       StopTime=30,
       Interval=0.001,

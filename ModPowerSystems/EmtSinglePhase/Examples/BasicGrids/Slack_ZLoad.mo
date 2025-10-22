@@ -12,4 +12,6 @@ equation
   connect(slack1.Pin1, busBar1.Pin1) annotation(
     Line(points = {{0, 10}, {0, -8}}));
 
+annotation(
+    Diagram(coordinateSystem(extent = {{-20, 40}, {20, -60}})));
 end Slack_ZLoad;

@@ -11,7 +11,7 @@ model Slack_RxLine_SynGen3rdOrderModel
   ModPowerSystems.DynPhasorSinglePhase.Slack.Slack slack(Vnom = 24e3, phiV(displayUnit = "deg") = 0) annotation (
     Placement(visible = true, transformation(origin = {0, 26}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));
   inner Base.System system(freq_nom = 60) annotation (
-    Placement(transformation(extent = {{-70, 54}, {-50, 74}})));
+    Placement(transformation(origin = {34, -40}, extent = {{-70, 54}, {-50, 74}})));
   ModPowerSystems.DynPhasorSinglePhase.Generation.Controllers.ExciterSteadyState exciterSteadyState(theta_volt_init = 2.10137 / 180 * Modelica.Constants.pi, vt_init = 1.05) annotation (
     Placement(visible = true, transformation(extent = {{-32, -66}, {-22, -54}}, rotation = 0)));
   Modelica.Blocks.Sources.Constant Q(k=-156467200)   annotation (
@@ -46,7 +46,7 @@ equation
           {-14.15,-44},{-14.15,-48},{-10.3,-48}},                                                                                           color = {0, 0, 127}));
   annotation (
     Icon(coordinateSystem(preserveAspectRatio = false)),
-    Diagram(coordinateSystem(preserveAspectRatio = false)),
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-60, 40}, {20, -80}})),
     experiment(
       StopTime=30,
       Interval=0.001,

@@ -18,7 +18,7 @@ model VoltageSourceAC_RL
   ModPowerSystems.EmtSinglePhase.Basics.Ground ground3
     annotation (Placement(transformation(extent={{4,-38},{24,-18}})));
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {68, -96}, extent = {{-100, 80}, {-80, 100}})));
 equation
   connect(resistor.Pin1, inductor.Pin2)
     annotation (Line(points={{6,16},{14,16},{14,10}}, color={0,0,0}));
@@ -29,5 +29,5 @@ equation
   connect(voltageSource.Pin2, resistor.Pin2)
     annotation (Line(points={{-22,16},{-18,16},{-14,16}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-60, 40}, {20, -40}})));
 end VoltageSourceAC_RL;

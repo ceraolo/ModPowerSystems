@@ -4,7 +4,7 @@ model Slack_RxLine_PQLoad
   ModPowerSystems.DynPhasorSinglePhase.Slack.Slack slack(Vnom = 24e3, phiV(displayUnit = "deg") = 0) annotation (
     Placement(visible = true, transformation(origin = {0, 26}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));
   inner Base.System system(freq_nom = 60) annotation (
-    Placement(transformation(extent = {{-70, 54}, {-50, 74}})));
+    Placement(transformation(origin = {30, -40}, extent = {{-70, 54}, {-50, 74}})));
   ModPowerSystems.DynPhasorSinglePhase.Connections.RxLine rxLine1(length = 1, r = 0.05, x = 0.1,
     Vnom=24e3)                                                                                   annotation (
     Placement(visible = true, transformation(origin={0,-10},   extent = {{-10, -10}, {10, 10}}, rotation = -90)));
@@ -28,6 +28,6 @@ equation
     annotation (Line(points={{0,-28},{0,-36}}, color={0,0,0}));
   annotation (
     Icon(coordinateSystem(preserveAspectRatio = false)),
-    Diagram(coordinateSystem(preserveAspectRatio = false)),
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-40, 40}, {20, -60}})),
     experiment(StopTime=30, Interval = 0.0001, StartTime = 0, Tolerance = 1e-06));
 end Slack_RxLine_PQLoad;

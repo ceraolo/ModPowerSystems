@@ -12,7 +12,7 @@ model VoltageSourceDC_RC
   ModPowerSystems.EmtSinglePhase.Basics.Ground ground3
     annotation (Placement(transformation(extent={{4,-38},{24,-18}})));
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {70, -96}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.EmtSinglePhase.Basics.Capacitor capacitor(C=0.001)
     annotation (Placement(transformation(
         extent={{10,-10},{-10,10}},
@@ -30,5 +30,5 @@ equation
   connect(ground.Pin1, voltageDC.Pin1) annotation (Line(points={{-52,-16},{-52,
           -16},{-52,16},{-42,16}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-60, 40}, {20, -40}})));
 end VoltageSourceDC_RC;

@@ -26,5 +26,5 @@ equation
   connect(slack.Plug1, busBar.Plug1)
     annotation (Line(points={{0,24},{0,21},{0,18}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-20, 40}, {20, -60}})));
 end Slack_RxLine_ZLoad;

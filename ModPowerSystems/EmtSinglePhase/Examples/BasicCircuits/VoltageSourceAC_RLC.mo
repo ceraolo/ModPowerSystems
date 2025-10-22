@@ -2,7 +2,7 @@ within ModPowerSystems.EmtSinglePhase.Examples.BasicCircuits;
 model VoltageSourceAC_RLC
   import ModPowerSystems;
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -96}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.EmtSinglePhase.Basics.VoltageAC voltageSource(phiV=0)
     annotation (Placement(transformation(extent={{-42,6},{-22,26}})));
   ModPowerSystems.EmtSinglePhase.Basics.Resistor resistor annotation (Placement(
@@ -44,5 +44,5 @@ equation
   connect(capacitor.Pin2, resistor.Pin2) annotation (Line(points={{34,10},{34,10},{
           34,16},{-8,16},{-8,10}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-60, 40}, {40, -40}})));
 end VoltageSourceAC_RLC;

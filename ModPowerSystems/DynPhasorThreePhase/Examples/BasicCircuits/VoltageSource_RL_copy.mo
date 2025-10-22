@@ -2,7 +2,7 @@ within ModPowerSystems.DynPhasorThreePhase.Examples.BasicCircuits;
 model VoltageSource_RL_copy
   import ModPowerSystems;
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {62, -96}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.DynPhasorThreePhase.Basics.VoltageSource voltageSource
     annotation (Placement(transformation(extent={{-42,6},{-22,26}})));
   ModPowerSystems.DynPhasorThreePhase.Basics.Resistor resistor
@@ -31,5 +31,5 @@ equation
   connect(voltageSource.Plug2, resistor.Plug2)
     annotation (Line(points={{-22,16},{-18,16},{-14,16}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-60, 40}, {20, -40}})));
 end VoltageSource_RL_copy;
