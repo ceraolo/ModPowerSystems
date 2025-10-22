@@ -39,8 +39,7 @@ equation
           lineColor={255,255,255},
           textString = "%name"),
           Text(
-          extent={{-90,4},{88,-26}},
-          textString="freq. = %freq_nom Hz",
+          extent={{-100,4},{98,-26}},
           lineColor={0,0,0},
-          horizontalAlignment=TextAlignment.Left)}));
+          textString="freq. = %freq_nom")}));
 end System;
