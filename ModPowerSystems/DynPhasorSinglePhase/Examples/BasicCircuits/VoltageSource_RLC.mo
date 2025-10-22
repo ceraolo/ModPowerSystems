@@ -2,7 +2,7 @@ within ModPowerSystems.DynPhasorSinglePhase.Examples.BasicCircuits;
 model VoltageSource_RLC
   import ModPowerSystems;
   inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {60, -96}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.DynPhasorSinglePhase.Basics.VoltageSource voltageSource
     annotation (Placement(transformation(extent={{-42,6},{-22,26}})));
   ModPowerSystems.DynPhasorSinglePhase.Basics.Resistor resistor annotation (
@@ -44,5 +44,5 @@ equation
   connect(capacitor.Pin2, resistor.Pin2) annotation (Line(points={{34,10},{34,10},{
           34,16},{-8,16},{-8,10}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-60, 40}, {40, -40}})));
 end VoltageSource_RLC;
