@@ -7,7 +7,7 @@ model Slack_RxLine_ZLoad_InverterPQCtrl
   ModPowerSystems.EmtThreePhase.Loads.ZLoad zLoad1(Pnom = {5e3, 5e3, 5e3}, Qnom = {5e2, 5e2, 5e2}, Vnom = 380) annotation(
     Placement(visible = true, transformation(origin = {46, -52}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   inner ModPowerSystems.Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-64, 36}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-22, 18}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.EmtThreePhase.Converters.InverterPQCtrl inv_LC_PQCtrl1 annotation(
     Placement(visible = true, transformation(origin = {-20, -22}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Basics.Ground ground1 annotation(
@@ -23,5 +23,6 @@ equation
     Line(points = {{46, 22}, {46, -2}}));
   annotation(
     Documentation(info = "<html><head></head><body><p>* a compact version of&nbsp;</p><p><span style=\"font-family: 'Courier New'; font-size: 12pt;\">slack_single_inv_withCtrl</span>&nbsp;</p><p>within&nbsp;<span style=\"font-family: 'Courier New'; font-size: 12pt;\">BasicGrids</span></p>
-</body></html>"));
+</body></html>"),
+  Diagram(coordinateSystem(extent = {{-80, 40}, {60, -60}})));
 end Slack_RxLine_ZLoad_InverterPQCtrl;

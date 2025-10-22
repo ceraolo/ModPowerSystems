@@ -1,7 +1,8 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
+
 model DER_Feeder
   inner ModPowerSystems.Base.System system(freq_nom = 50) annotation(
-    Placement(visible = true, transformation(origin = {-64, 92}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-50, 48}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.EmtThreePhase.Measurements.PLL pll1 annotation(
     Placement(visible = true, transformation(origin = {-91, -37}, extent = {{-5, -5}, {5, 5}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Measurements.PowerMeasurementDQ pq1 annotation(
@@ -21,7 +22,7 @@ model DER_Feeder
   ModPowerSystems.EmtThreePhase.Basics.VCVS vcvs1(phiV = 0) annotation(
     Placement(visible = true, transformation(origin = {-146, -22}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Basics.Ground ground1 annotation(
-    Placement(visible = true, transformation(origin = {-2, 82}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-12, 48}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.EmtThreePhase.Measurements.CurrentMeasurementABC currentMeasurementBlock2 annotation(
     Placement(visible = true, transformation(origin = {16, 22}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
   Modelica.Blocks.Interfaces.RealOutput P_VCVSI annotation(
@@ -85,7 +86,7 @@ equation
   connect(currentMeasurementBlock2.Plug2, currentMeasurementBlock1.Plug2) annotation(
     Line(points = {{16, 12}, {16, 12}, {16, -20}, {6, -20}, {6, -22}, {6, -22}}));
   connect(vccs1.Plug2, ground1.Plug1) annotation(
-    Line(points = {{16, 74}, {16, 74}, {16, 100}, {-2, 100}, {-2, 92}, {-2, 92}}));
+    Line(points = {{16, 74}, {16, 78}, {-12, 78}, {-12, 58}}));
   connect(Vi, vcvs1.Vin) annotation(
     Line(points = {{-175, 13}, {-146, 13}, {-146, -10}, {-146, -10}}, color = {0, 0, 127}));
   connect(vcvs1.Plug1, ground3.Plug1) annotation(
@@ -95,7 +96,7 @@ equation
   connect(pq1.Qac, Q_VCVSI) annotation(
     Line(points = {{-49.4, -48.28}, {-46, -48.28}, {-46, -84}, {94, -84}, {94, -72}, {130, -72}, {130, -72}}, color = {0, 0, 127}));
   annotation(
-    Diagram(coordinateSystem(extent = {{-200, -200}, {200, 200}}, initialScale = 0.1)),
+    Diagram(coordinateSystem(extent = {{-200, 80}, {160, -80}}, initialScale = 0.1)),
     Icon(coordinateSystem(extent = {{-200, -200}, {200, 200}})),
     __OpenModelica_commandLineOptions = "");
 end DER_Feeder;

@@ -5,7 +5,7 @@ model Slack_Tra_RxLine_ZLoad
   ModPowerSystems.EmtThreePhase.Transformers.Transformer transformer1 annotation(
     Placement(visible = true, transformation(origin = {0, 32}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
   inner Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-68, 64}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-24, 76}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.EmtThreePhase.Loads.ZLoad zLoad1(Vnom = 20e3)  annotation(
     Placement(visible = true, transformation(origin = {0, -68}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Connections.BusBar busBar1(Vnom = 110e3)  annotation(
@@ -29,4 +29,6 @@ equation
     Line(points = {{0, 42}, {0, 42}, {0, 54}, {0, 54}, {0, 54}}));
   connect(slack1.Plug1, busBar1.Plug1) annotation(
     Line(points = {{0, 68}, {0, 68}, {0, 54}, {0, 54}, {0, 54}, {0, 54}}));
+annotation(
+    Diagram(coordinateSystem(extent = {{-40, 100}, {20, -80}})));
 end Slack_Tra_RxLine_ZLoad;

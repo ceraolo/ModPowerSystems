@@ -1,7 +1,7 @@
 within ModPowerSystems.EmtThreePhase.Examples.BasicGrids;
 model Slack_RxLine_ZLoad_Init
 inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {68, -70}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.EmtThreePhase.Slack.Slack slack( Vnom = 110000.0, phiV = 0, v( start = {89814.62390204989, -44907.31195102492, -44907.31195102492}), i( start = {-37.02894077119425, 34.55425712418914, 2.4746836470050937}))
     annotation (Placement(transformation(extent={{-10,30},{10,10}})));
   ModPowerSystems.EmtThreePhase.Connections.BusBar N0( v( start = {89814.62390204989, -44907.31195102492, -44907.31195102492}), i( start = {0.0, -0.0, -0.0}))
@@ -32,6 +32,6 @@ equation
     Line(points = {{0, -28}, {0, -28}, {0, -24}, {-1.77636e-015, -24}}, color = {0, 0, 0}));
   annotation (Placement(transformation(extent={{-10,32},{10,12}})),
                 Placement(transformation(extent={{-100,80},{-80,100}})),
-              Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
-            -100},{100,100}})));
+              Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-40,
+            40},{20,-60}})));
 end Slack_RxLine_ZLoad_Init;

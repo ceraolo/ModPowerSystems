@@ -7,7 +7,7 @@ model Slack_RxLine_ZLoad_VCVS_PLL
   ModPowerSystems.EmtThreePhase.Loads.ZLoad zLoad1(Pnom = {5e3, 5e3, 5e3}, Qnom = {5e2, 5e2, 5e2}, Vnom = 380) annotation(
     Placement(visible = true, transformation(origin = {68, -42}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   inner ModPowerSystems.Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-68, 76}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-32, 20}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.EmtThreePhase.Basics.Ground ground1 annotation(
     Placement(visible = true, transformation(origin = {-70, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Basics.Ground ground2 annotation(
@@ -55,5 +55,6 @@ equation
     Line(points = {{-13, 40}, {-36, 40}, {-36, 40}, {-59, 40}, {-59, -12}, {-59, -12}, {-59, -12}, {-59, -12}}, color = {0, 0, 127}));
 
   annotation(
-    Documentation(info = "<html><head></head><body><p>* this is intended to validate the VCVS_DQ model, pll and dq transform.&nbsp;<br>* expected results:</p><p><span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>**&nbsp;VCVS_DQ.v [:] = rxline1.v2 [:]&nbsp;<br><span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>**&nbsp;VCVS_DQ.i [:] close to 0.</p><p><br>* input to the controlled voltage source (VCVS_DQ) is V_dq from the PLL.</p><div style=\"font-size: 12px;\"><br></div></body></html>"));
+    Documentation(info = "<html><head></head><body><p>* this is intended to validate the VCVS_DQ model, pll and dq transform.&nbsp;<br>* expected results:</p><p><span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>**&nbsp;VCVS_DQ.v [:] = rxline1.v2 [:]&nbsp;<br><span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>**&nbsp;VCVS_DQ.i [:] close to 0.</p><p><br>* input to the controlled voltage source (VCVS_DQ) is V_dq from the PLL.</p><div style=\"font-size: 12px;\"><br></div></body></html>"),
+  Diagram(coordinateSystem(extent = {{-80, 60}, {80, -80}})));
 end Slack_RxLine_ZLoad_VCVS_PLL;

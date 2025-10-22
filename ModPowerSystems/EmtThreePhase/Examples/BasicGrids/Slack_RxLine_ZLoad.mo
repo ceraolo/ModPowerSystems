@@ -11,7 +11,7 @@ model Slack_RxLine_ZLoad
   ModPowerSystems.EmtThreePhase.Connections.BusBar N1(Vnom = 110000.0) annotation(
     Placement(visible = true, transformation(origin = {0, -50}, extent = {{-10, 0}, {10, 20}}, rotation = 0)));
   inner Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-74, 58}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-22, 26}, extent = {{-10, -10}, {10, 10}})));
 equation
   connect(zLoad.Plug1, N1.Plug1) annotation(
     Line(points = {{0, -56}, {0, -40}}));
@@ -23,7 +23,7 @@ equation
     Line(points = {{0, -28}, {0, -40}}));
   annotation(
     Icon(coordinateSystem(preserveAspectRatio = false)),
-    Diagram(coordinateSystem(preserveAspectRatio = false)),
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-40, 40}, {20, -80}})),
     experiment(StartTime = 0, StopTime = 2, Tolerance = 1e-06, Interval = 0.001),
     __OpenModelica_simulationFlags(lv = "LOG_STATS", s = "dassl"));
 end Slack_RxLine_ZLoad;

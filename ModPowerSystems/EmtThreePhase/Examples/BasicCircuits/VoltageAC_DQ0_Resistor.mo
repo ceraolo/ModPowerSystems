@@ -9,7 +9,7 @@ model VoltageAC_DQ0_Resistor
   ModPowerSystems.EmtThreePhase.Basics.Ground ground2 annotation(
     Placement(visible = true, transformation(origin = {24, -10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   inner Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-58, 50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-14, -14}, extent = {{-10, -10}, {10, 10}})));
 equation
   connect(voltageAC_DQ01.Plug2, resistor1.Plug1) annotation(
     Line(points = {{-30, 0}, {-12, 0}}));
@@ -18,4 +18,6 @@ equation
   connect(ground1.Plug1, voltageAC_DQ01.Plug1) annotation(
     Line(points = {{-60, 0}, {-50, 0}, {-50, 0}, {-50, 0}}));
 
+annotation(
+    Diagram(coordinateSystem(extent = {{-80, 20}, {40, -20}})));
 end VoltageAC_DQ0_Resistor;

@@ -1,7 +1,7 @@
 within ModPowerSystems.DynPhasorThreePhase.Examples.BasicGrids;
 model Slack_PiLine_ZLoad_Init
 inner ModPowerSystems.Base.System system
-    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+    annotation (Placement(transformation(origin = {66, -70}, extent = {{-100, 80}, {-80, 100}})));
   ModPowerSystems.DynPhasorThreePhase.Slack.Slack slack(Vnom = 110e3, phiV = 0)
     annotation (Placement(transformation(extent={{-10,30},{10,10}})));
   ModPowerSystems.DynPhasorThreePhase.Connections.BusBar N0( v( re( start = {63508.529610858845, -31754.264805429408, -31754.264805429408}), im( start = {0.0, -55000.000000000015, 55000.000000000015})))
@@ -32,6 +32,6 @@ equation
     Line(points = {{0, -28}, {0, -28}, {0, -24}, {-1.77636e-015, -24}}, color = {0, 0, 0}));
   annotation (Placement(transformation(extent={{-10,32},{10,12}})),
                 Placement(transformation(extent={{-100,80},{-80,100}})),
-              Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
-            -100},{100,100}})));
+              Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-40,
+            40},{20,-60}})));
 end Slack_PiLine_ZLoad_Init;

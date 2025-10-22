@@ -11,7 +11,7 @@ model Slack_PiLine_ZLoad
   ModPowerSystems.DynPhasorThreePhase.Connections.BusBar N1 annotation(
     Placement(visible = true, transformation(origin = {0, -34}, extent = {{-10, 0}, {10, 20}}, rotation = 0)));
   inner Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-62, 66}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-24, 48}, extent = {{-10, -10}, {10, 10}})));
 equation
   connect(slack.Plug1, N0.Plug1) annotation(
     Line(points = {{0, 40}, {0, 24}}));
@@ -21,4 +21,6 @@ equation
     Line(points = {{0, -6}, {0, -24}}));
   connect(zLoad1.Plug1, N1.Plug1) annotation(
     Line(points = {{0, -46}, {0, -46}, {0, -24}, {0, -24}, {0, -24}, {0, -24}}));
+annotation(
+    Diagram(coordinateSystem(extent = {{-40, 60}, {20, -80}})));
 end Slack_PiLine_ZLoad;

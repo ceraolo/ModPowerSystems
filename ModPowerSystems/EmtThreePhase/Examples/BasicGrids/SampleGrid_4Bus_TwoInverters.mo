@@ -7,7 +7,7 @@ model SampleGrid_4Bus_TwoInverters
   ModPowerSystems.EmtThreePhase.Loads.ZLoad zLoad1(Pnom = {1e3, 1e3, 1e3}, Qnom = {1e2, 1e2, 1e2}, Vnom = 380) annotation(
     Placement(visible = true, transformation(origin = {12, -12}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   inner ModPowerSystems.Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-60, 66}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-50, 40}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.EmtThreePhase.Converters.InverterPQCtrl inv_1(Q_obj = 1e2)  annotation(
     Placement(visible = true, transformation(origin = {-44, -2}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Basics.Ground ground1 annotation(
@@ -47,5 +47,5 @@ equation
     Line(points = {{-54, -2}, {-70, -2}}));
   annotation(
     Documentation(info = "<html><head></head><body><div style=\"font-size: 12px;\">* total q injection by inverters are larger than consumption by loads</div><div style=\"font-size: 12px;\">* observabal voltage rise on Bus3 and Bus1&nbsp;</div></body></html>"),
-    Diagram(coordinateSystem(initialScale = 0.1), graphics = {Text(origin = {-21, -8}, lineColor = {0, 104, 0}, fillColor = {255, 255, 255}, extent = {{-5, 4}, {5, -4}}, textString = "Bus1"), Text(origin = {11, 6}, lineColor = {0, 104, 0}, fillColor = {0, 85, 0}, extent = {{-5, 4}, {5, -4}}, textString = "Bus2"), Text(origin = {41, -8}, lineColor = {0, 104, 0}, fillColor = {0, 85, 0}, extent = {{-5, 4}, {5, -4}}, textString = "Bus3"), Text(origin = {83, 4}, lineColor = {0, 104, 0}, fillColor = {0, 85, 0}, extent = {{-5, 4}, {5, -4}}, textString = "Bus4"), Rectangle(origin = {-21, -8}, lineColor = {0, 85, 0}, extent = {{-5, 2}, {5, -2}}), Rectangle(origin = {11, 6}, lineColor = {0, 85, 0}, extent = {{-5, 2}, {5, -2}}), Rectangle(origin = {41, -8}, lineColor = {0, 85, 0}, extent = {{-5, 2}, {5, -2}}), Rectangle(origin = {83, 4}, lineColor = {0, 85, 0}, extent = {{-5, 2}, {5, -2}})}));
+    Diagram(coordinateSystem(initialScale = 0.1, extent = {{-80, 60}, {100, -20}}), graphics = {Text(origin = {-21, -8}, textColor = {0, 104, 0}, extent = {{-5, 4}, {5, -4}}, textString = "Bus1"), Text(origin = {11, 6}, textColor = {0, 104, 0}, extent = {{-5, 4}, {5, -4}}, textString = "Bus2"), Text(origin = {41, -8}, textColor = {0, 104, 0}, extent = {{-5, 4}, {5, -4}}, textString = "Bus3"), Text(origin = {83, 4}, textColor = {0, 104, 0}, extent = {{-5, 4}, {5, -4}}, textString = "Bus4"), Rectangle(origin = {-21, -8}, lineColor = {0, 85, 0}, extent = {{-5, 2}, {5, -2}}), Rectangle(origin = {11, 6}, lineColor = {0, 85, 0}, extent = {{-5, 2}, {5, -2}}), Rectangle(origin = {41, -8}, lineColor = {0, 85, 0}, extent = {{-5, 2}, {5, -2}}), Rectangle(origin = {83, 4}, lineColor = {0, 85, 0}, extent = {{-5, 2}, {5, -2}})}));
 end SampleGrid_4Bus_TwoInverters;

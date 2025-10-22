@@ -13,7 +13,7 @@ model Slack_RxLine_VoltageSourceAC
   ModPowerSystems.EmtThreePhase.Basics.Ground ground1 annotation(
     Placement(visible = true, transformation(origin = {0, -94}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   inner ModPowerSystems.Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-56, 64}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-22, 24}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.EmtThreePhase.Measurements.PowerMeasurementDQ powerMeasurementDQ1 annotation(
     Placement(visible = true, transformation(origin = {86, -38}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Transforms.ABCtoDQ0_Park aBCtoDQ0_Park1 annotation(
@@ -55,7 +55,7 @@ equation
     Line(points = {{0, 16}, {0, 4}}));
   annotation(
     Icon(coordinateSystem(preserveAspectRatio = false)),
-    Diagram(coordinateSystem(preserveAspectRatio = false)),
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-40, 40}, {100, -100}})),
     experiment(StartTime = 0, StopTime = 2, Tolerance = 1e-06, Interval = 0.001),
     __OpenModelica_simulationFlags(lv = "LOG_STATS", s = "dassl"));
 end Slack_RxLine_VoltageSourceAC;

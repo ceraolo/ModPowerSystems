@@ -25,5 +25,5 @@ equation
     Line(points = {{-65.5, -15}, {-57.75, -15}, {-57.75, -12}, {-50.3, -12}}, color = {0, 0, 127}));
   annotation(
     Icon(coordinateSystem(preserveAspectRatio = false)),
-    Diagram(coordinateSystem(preserveAspectRatio = false)));
+    Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-80, 20}, {40, -40}})));
 end SynGen_Park_TPFault_UnitTest_3rdOrderModel;

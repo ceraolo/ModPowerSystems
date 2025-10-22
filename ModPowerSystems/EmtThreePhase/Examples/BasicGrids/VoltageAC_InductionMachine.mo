@@ -3,7 +3,7 @@ model VoltageAC_InductionMachine
   ModPowerSystems.EmtThreePhase.Basics.Ground ground(Vnom = 0)
     annotation (Placement(transformation(extent={{-40,-18},{-20,2}})));
   inner ModPowerSystems.Base.System system(freq_nom = 60)
-    annotation (Placement(transformation(extent={{-70,74},{-50,94}})));
+    annotation (Placement(transformation(origin = {60, -94}, extent = {{-70, 74}, {-50, 94}})));
   ModPowerSystems.EmtThreePhase.Basics.VoltageAC voltageAC(Vpeak=sqrt(2)*220/sqrt(3))
                            annotation (Placement(transformation(
         extent={{-10,-10},{10,10}},
@@ -26,5 +26,5 @@ equation
   connect(voltageAC.Plug1, inductionMachineSquirrelCage.Plug1)
     annotation (Line(points={{10,8},{36,8}}, color={0,0,0}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio = false, extent = {{-40, 20}, {60, -20}})));
 end VoltageAC_InductionMachine;

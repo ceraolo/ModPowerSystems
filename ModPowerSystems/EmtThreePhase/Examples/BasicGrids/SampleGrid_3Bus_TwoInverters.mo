@@ -7,7 +7,7 @@ model SampleGrid_3Bus_TwoInverters
   ModPowerSystems.EmtThreePhase.Loads.ZLoad zLoad1(Pnom = {5e3, 5e3, 5e3}, Qnom = {5e2, 5e2, 5e2}, Vnom = 380) annotation(
     Placement(visible = true, transformation(origin = {18, -12}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   inner ModPowerSystems.Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-90, 86}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-48, 40}, extent = {{-10, -10}, {10, 10}})));
   ModPowerSystems.EmtThreePhase.Converters.InverterPQCtrl inv_LC_PQCtrl1 annotation(
     Placement(visible = true, transformation(origin = {-44, -2}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Basics.Ground ground1 annotation(
@@ -38,5 +38,6 @@ equation
   connect(slack1.Plug1, rxLine1.Plug1) annotation(
     Line(points = {{-22, 32}, {-22, 18}}));
   annotation(
-    Documentation(info = "<html><head></head><body><div style=\"font-size: 12px;\"><br></div></body></html>"));
+    Documentation(info = "<html><head></head><body><div style=\"font-size: 12px;\"><br></div></body></html>"),
+  Diagram(coordinateSystem(extent = {{-80, 60}, {100, -20}})));
 end SampleGrid_3Bus_TwoInverters;

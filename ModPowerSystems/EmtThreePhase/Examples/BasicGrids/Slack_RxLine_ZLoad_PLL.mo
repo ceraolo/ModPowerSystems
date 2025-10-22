@@ -9,7 +9,7 @@ model Slack_RxLine_ZLoad_PLL
   ModPowerSystems.EmtThreePhase.Measurements.VoltageMeasurementABC voltageMeasurementABC1 annotation(
     Placement(visible = true, transformation(origin = {42, -16}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
   inner ModPowerSystems.Base.System system annotation(
-    Placement(visible = true, transformation(origin = {-66, 72}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+    Placement(transformation(origin = {-50, 44}, extent = {{-10, -10}, {10, 10}})));
 ModPowerSystems.EmtThreePhase.Measurements.PLL pll1 annotation(
     Placement(visible = true, transformation(origin = {70, 34}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ModPowerSystems.EmtThreePhase.Transforms.ABCtoDQ0_Park aBCtoDQ0_Park1 annotation(
@@ -33,4 +33,6 @@ equation
   connect(slack1.Plug1, rxLine1.Plug1) annotation(
     Line(points = {{-2, 46}, {-2, 46}, {-2, 46}, {-2, 46}, {-2, 22}, {-2, 22}}));
   I_dq=ModPowerSystems.EmtThreePhase.Transforms.Functions.ABCtoDQ_Park(currentMeasurementABC1.i_abc,system.theta);
+annotation(
+    Diagram(coordinateSystem(extent = {{-80, 80}, {100, -80}})));
 end Slack_RxLine_ZLoad_PLL;
