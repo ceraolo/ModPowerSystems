@@ -15,8 +15,8 @@ equation
     Icon(coordinateSystem(
         preserveAspectRatio=false,
         extent={{-100,-100},{100,100}},
-        grid={2,2}), graphics={                                Ellipse(extent={{50,50},
-              {-48,-52}},        lineColor={0,0,0},
+        grid={2,2}), graphics={                                Ellipse(extent={{50,52},
+              {-48,-50}},        lineColor={0,0,0},
           rotation=360,
           fillPattern=FillPattern.Solid,
           fillColor={255,255,255}),
