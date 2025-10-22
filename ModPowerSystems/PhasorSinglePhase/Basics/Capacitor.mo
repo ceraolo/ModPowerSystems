@@ -17,15 +17,19 @@ equation
           Line(points={{8,58}}, color={0,0,0}),
           Line(points={{100,0},{12,0}},color={0,0,0}),
           Rectangle(
-            extent={{-14,32},{-12,-32}},
+            extent={{-12,38},{-10,-34}},
             lineColor={0,0,0},
             lineThickness=1,
             fillColor={0,0,0},
             fillPattern=FillPattern.Solid),
           Rectangle(
-            extent={{10,32},{12,-32}},
+            extent={{10,38},{12,-34}},
             lineColor={0,0,0},
             lineThickness=1,
             fillColor={0,0,0},
-            fillPattern=FillPattern.Solid)}));
+            fillPattern=FillPattern.Solid),
+        Text(
+          extent={{-150,92},{150,52}},
+          textString="%name",
+          textColor={0,0,255})}));
 end Capacitor;
