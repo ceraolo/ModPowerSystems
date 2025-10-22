@@ -1,6 +1,6 @@
 within ModPowerSystems.DynPhasorThreePhase.Transformers;
 model IdealTransformer
-  extends ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase.TwoPin;
+  extends ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase.TwoPlug;
 
   parameter SI.Voltage Vnom1 "primary voltage level";
   parameter SI.Voltage Vnom2 "secondary voltage level";

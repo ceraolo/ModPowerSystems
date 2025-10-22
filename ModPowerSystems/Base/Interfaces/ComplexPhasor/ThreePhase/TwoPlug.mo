@@ -1,5 +1,5 @@
 within ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase;
-partial model TwoPin
+partial model TwoPlug
   "Shell model for models with two electrical three-phase connectors"
 
   ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase.Plug Plug1
@@ -42,4 +42,4 @@ equation
 <p><img src=\"modelica://ModPowerSystems/../Documentation/figs/TwoPin.png\"/></p>
 <p>In comparison to a one port, I1 and I2 do not have to be the same.</p>
 </html>"));
-end TwoPin;
+end TwoPlug;

@@ -1,7 +1,7 @@
 within ModPowerSystems.DynPhasorThreePhase.Connections;
 model PiLine
   extends
-    ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase.TwoPin;
+    ModPowerSystems.Base.Interfaces.ComplexPhasor.ThreePhase.TwoPlug;
 
   parameter SI.Resistance[3,3] r = {{0.207,0,0}, {0,0.207,0}, {0,0,0.207}}
     "Series Resistance per km";

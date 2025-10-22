@@ -21,7 +21,7 @@ equation
           Line(points={{-100,0},{-72,0}},
           color={0,0,0}),
         Text(
-          extent={{-148,92},{152,52}},
+          extent={{-150,84},{150,44}},
           textString="%name",
           textColor={0,0,255})}));
 end Resistor;
