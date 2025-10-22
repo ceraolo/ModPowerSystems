@@ -11,7 +11,7 @@ connector negPin "Pin/Terminal with voltage potential and current flow"
         grid={2,2}),
         graphics={
           Rectangle(
-            extent={{60,60},{-60,-60}},
+            extent={{100,100},{-100,-100}},
             fillPattern=FillPattern.Solid,
           fillColor={255,255,255})}),
     Diagram(
@@ -21,7 +21,7 @@ connector negPin "Pin/Terminal with voltage potential and current flow"
         grid={2,2}),
         graphics={
           Rectangle(
-            extent={{50,50},{-50,-50}},
+            extent={{100,100},{-100,-100}},
             fillPattern=FillPattern.Solid,
           fillColor={255,255,255})}),
     Documentation(

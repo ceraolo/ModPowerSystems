@@ -8,14 +8,20 @@ equation
       v = R*i;
     annotation (Icon(graphics={
           Rectangle(
-            extent={{-20,40},{20,-40}},
+            extent={{-33,72},{33,-72}},
             lineColor={0,0,0},
             lineThickness=0.5,
-            origin={0,0},
-            rotation=270),
+            origin={2,1},
+            rotation=270,
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),
           Line(points={{8,58}}, color={0,0,0}),
-          Line(points={{40,0},{100,0}},color={0,0,0}),
+          Line(points={{74,0},{100,0}},color={0,0,0}),
           Line(points={{-54,-34}}, color={0,0,0}),
-          Line(points={{-100,0},{-40,0}},
-          color={0,0,0})}));
+          Line(points={{-100,0},{-72,0}},
+          color={0,0,0}),
+        Text(
+          extent={{-148,92},{152,52}},
+          textString="%name",
+          textColor={0,0,255})}));
 end Resistor;
