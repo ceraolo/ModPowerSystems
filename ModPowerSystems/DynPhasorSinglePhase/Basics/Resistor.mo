@@ -7,15 +7,22 @@ model Resistor
 equation
     v = R*i;
   annotation (Icon(graphics={
-        Rectangle(
-          extent={{-20,40},{20,-40}},
-          lineColor={0,0,0},
-          lineThickness=0.5,
-          origin={0,0},
-          rotation=270),
         Line(points={{8,58}}, color={0,0,0}),
-        Line(points={{40,0},{100,0}},color={0,0,0}),
+        Line(points={{8,58}}, color={0,0,0}),
+        Line(points={{40,0},{100,0}},color={162,29,33}),
         Line(points={{-54,-34}}, color={0,0,0}),
         Line(points={{-100,0},{-40,0}},
-        color={0,0,0})}));
+        color={162,29,33}),
+          Rectangle(
+            extent={{-33,72},{33,-72}},
+            lineColor={162,29,33},
+            lineThickness=0.5,
+            origin={0,1},
+            rotation=270,
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),
+        Text(
+          extent={{-152,84},{148,44}},
+          textString="%name",
+          textColor={0,0,255})}));
 end Resistor;
