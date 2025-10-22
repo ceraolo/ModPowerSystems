@@ -18,8 +18,8 @@ equation
         Line(points={{96,0},{38,0}}, color={162,29,33}),
         Rectangle(
           extent={{-72,32},{72,-32}},
-          lineColor={162,29,33},
-          fillColor={162,29,33},
+          lineColor={0,0,0},
+          fillColor={0,0,0},
           fillPattern=FillPattern.Solid),
         Text(
           extent={{-150,86},{150,46}},

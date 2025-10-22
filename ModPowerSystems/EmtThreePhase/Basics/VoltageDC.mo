@@ -9,21 +9,23 @@ equation
   v[:] = V[:];
   annotation (Icon(coordinateSystem(preserveAspectRatio=false), graphics={
                                                                Ellipse(extent={{
-              50,50},{-50,-50}}, lineColor={0,0,0}),
-        Line(points={{-100,0},{-50,0}}, color={0,0,0}),
-        Line(points={{96,0},{50,0}}, color={0,0,0}),
+              50,50},{-50,-50}}, lineColor={0,0,255},
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),
+        Line(points={{-100,0},{-50,0}}, color={0,0,255}),
+        Line(points={{96,0},{50,0}}, color={0,0,255}),
         Line(points={{-2.22045e-016,-1.35963e-032},{24,-3.67395e-016}},
-                                      color={0,0,0},
+                                      color={0,0,255},
           origin={-30,-12},
           rotation=90),
-        Line(points={{28,-4}}, color={0,0,0}),
+        Line(points={{28,-4}}, color={0,0,255}),
         Line(points={{-2.22045e-016,-1.35963e-032},{24,-3.67395e-016}},
-                                      color={0,0,0},
+                                      color={0,0,255},
           origin={-18,0},
           rotation=180),
-        Line(points={{-2.22045e-016,-1.35963e-032},{24,-3.67395e-016}},
-                                      color={0,0,0},
-          origin={40,0},
-          rotation=180)}),                                       Diagram(
+        Text(
+          extent={{-150,100},{150,60}},
+          textString="%name",
+          textColor={0,0,255})}),                                Diagram(
         coordinateSystem(preserveAspectRatio=false)));
 end VoltageDC;

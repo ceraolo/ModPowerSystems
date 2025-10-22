@@ -12,7 +12,8 @@ connector Pin "Pin/Terminal with voltage potential and current flow"
         graphics={
           Rectangle(
             extent={{100,100},{-100,-100}},
-            fillPattern=FillPattern.Solid)}),
+            fillPattern=FillPattern.Solid,
+          fillColor={85,170,255})}),
     Diagram(
       coordinateSystem(
         preserveAspectRatio=false,
@@ -21,7 +22,8 @@ connector Pin "Pin/Terminal with voltage potential and current flow"
         graphics={
           Rectangle(
             extent={{100,100},{-100,-100}},
-            fillPattern=FillPattern.Solid)}),
+            fillPattern=FillPattern.Solid,
+          fillColor={85,170,255})}),
     Documentation(
       info="
         <html>         

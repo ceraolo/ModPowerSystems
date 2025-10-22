@@ -13,15 +13,21 @@ equation
 
   annotation (Icon(coordinateSystem(preserveAspectRatio=false), graphics={
                                                                Ellipse(extent={{
-              50,50},{-50,-50}}, lineColor={0,0,0}),
-        Line(points={{-100,0},{-50,0}}, color={0,0,0}),
-        Line(points={{96,0},{50,0}}, color={0,0,0}),
-        Line(points={{28,-4}}, color={0,0,0}),
+              50,50},{-50,-50}}, lineColor={0,0,255},
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),
+        Line(points={{-100,0},{-50,0}}, color={0,0,255}),
+        Line(points={{96,0},{50,0}}, color={0,0,255}),
+        Line(points={{28,-4}}, color={0,0,255}),
         Text(
           extent={{40,-30},{-40,30}},
-          lineColor={0,0,0},
+          lineColor={0,0,255},
           fillColor={0,0,0},
           fillPattern=FillPattern.Solid,
-          textString="~")}),                                     Diagram(
+          textString="~"),
+        Text(
+          extent={{-150,100},{150,60}},
+          textString="%name",
+          textColor={0,0,255})}),                                Diagram(
         coordinateSystem(preserveAspectRatio=false)));
 end VoltageAC;

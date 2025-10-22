@@ -11,6 +11,18 @@ equation
   v[2] = Vin [2];
   v[3] = Vin [3];
   annotation(
-    Icon(coordinateSystem(preserveAspectRatio = false, initialScale = 0.1), graphics = {Ellipse(extent = {{50, 50}, {-50, -50}}, endAngle = 360), Line(points = {{-100, 0}, {-50, 0}}), Line(points = {{96, 0}, {50, 0}}), Line(points = {{28, -4}}), Text(origin = {0, 4}, fillPattern = FillPattern.Solid, extent = {{40, -30}, {-40, 30}}, textString = "~"), Line(origin = {0, 75}, points = {{0, 25}, {0, -23}, {0, -25}, {0, -25}})}),
+    Icon(coordinateSystem(preserveAspectRatio = false, initialScale = 0.1), graphics = {Ellipse(extent = {{50, 50}, {-50, -50}}, endAngle = 360,
+          lineColor={0,0,255},
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),                                                                                                         Line(points = {{-100, 0}, {-50, 0}}, color=
+              {0,0,255}),                                                                                                                                                               Line(points = {{96, 0}, {50, 0}}, color=
+              {0,0,255}),                                                                                                                                                                                                  Line(points = {{28, -4}}, color=
+              {0,0,255}),                                                                                                                                                                                                        Text(                 fillPattern = FillPattern.Solid, extent = {{40, -30}, {-40, 30}}, textString = "~",
+          textColor={0,0,255}),                                                                                                                                                                                                        Line(origin = {0, 75}, points = {{0, 25}, {0, -23}, {0, -25}, {0, -25}},
+          color={0,0,255}),
+        Text(
+          extent={{-148,-62},{152,-102}},
+          textString="%name",
+          textColor={0,0,255})}),
     Diagram(coordinateSystem(preserveAspectRatio = false)));
 end VCVS;

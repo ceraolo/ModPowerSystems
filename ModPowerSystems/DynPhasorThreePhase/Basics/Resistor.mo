@@ -10,13 +10,13 @@ equation
     v[3] = R[3]*i[3];
   annotation (Icon(graphics={
         Line(points={{8,58}}, color={0,0,0}),
-        Line(points={{40,0},{100,0}},color={162,29,33}),
+        Line(points={{40,0},{100,0}},color={0,0,0}),
         Line(points={{-54,-34}}, color={0,0,0}),
         Line(points={{-100,0},{-40,0}},
-        color={162,29,33}),
+        color={0,0,0}),
           Rectangle(
             extent={{-33,72},{33,-72}},
-            lineColor={162,29,33},
+            lineColor={0,0,0},
             lineThickness=0.5,
             origin={0,1},
             rotation=270,
@@ -25,5 +25,5 @@ equation
         Text(
           extent={{-152,84},{148,44}},
           textString="%name",
-          textColor={0,0,255})}));
+          textColor={0,0,0})}));
 end Resistor;

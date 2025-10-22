@@ -9,17 +9,17 @@ equation
     annotation (Icon(graphics={
           Rectangle(
             extent={{-33,72},{33,-72}},
-            lineColor={0,0,0},
+            lineColor={0,128,255},
             lineThickness=0.5,
             origin={0,1},
             rotation=270,
           fillColor={255,255,255},
           fillPattern=FillPattern.Solid),
           Line(points={{8,58}}, color={0,0,0}),
-          Line(points={{72,0},{98,0}}, color={0,0,0}),
+          Line(points={{72,0},{98,0}}, color={0,128,255}),
           Line(points={{-54,-34}}, color={0,0,0}),
           Line(points={{-100,0},{-72,0}},
-          color={0,0,0}),
+          color={0,128,255}),
         Text(
           extent={{-152,84},{148,44}},
           textString="%name",
