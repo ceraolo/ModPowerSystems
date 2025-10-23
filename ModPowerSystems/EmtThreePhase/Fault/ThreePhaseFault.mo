@@ -19,23 +19,17 @@ equation
       v[:] = R[:].*i[:];
 
   annotation (Icon(graphics={
-        Rectangle(
-          extent={{-20,40},{20,-40}},
-          lineColor={0,0,0},
-          lineThickness=0.5,
-          origin={0,0},
-          rotation=180),
         Line(points={{8,58}}, color={0,0,0}),
-        Line(points={{0,98},{0,40}}, color={0,0,0}),
         Line(points={{-54,-34}}, color={0,0,0}),
-        Line(points={{0,-40},{0,-92}}, color={0,0,0}),
         Polygon(
-          points={{-6,-84},{6,-84},{0,-98},{-6,-84}},
-          lineColor={0,0,0},
-          fillColor={0,0,0},
+          points={{-8,-2},{2,4},{4,-14},{-8,-2}},
+          lineColor={238,46,47},
+          fillColor={238,46,47},
           fillPattern=FillPattern.Solid),
         Line(
-          points={{-46,-12},{6,14},{-10,-14},{46,18}},
+          points={{-2,0},{-30,70},{-6,50},{0,90}},
           color={238,46,47},
-          thickness=0.5)}));
+          thickness=0.5),                                                                                                                          Text(extent={{-100,
+              -72},{100,-32}},                                                                                                                                                               textString = "%name",
+          textColor={0,0,255})}));
 end ThreePhaseFault;

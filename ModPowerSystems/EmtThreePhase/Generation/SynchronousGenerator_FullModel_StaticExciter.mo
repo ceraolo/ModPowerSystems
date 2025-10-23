@@ -42,14 +42,16 @@ equation
   connect(P_m.y, exciterSteadyState.P) annotation(
     Line(points = {{-83.5, 13}, {-52, 13}, {-52, 12}}, color = {0, 0, 127}));
   connect(Q.y, exciterSteadyState.Q) annotation(
-    Line(points = {{-84, -16}, {-70, -16}, {-70, 4}, {-54, 4}, {-54, 4}, {-52, 4}}, color = {0, 0, 127}));
+    Line(points={{-83.5,-17},{-70,-17},{-70,4},{-54,4},{-54,4},{-52,4}},            color = {0, 0, 127}));
  connect(synchronousGenerator_FullModel.Plug1, Plug1) annotation(
     Line(points = {{0, 20}, {0, 100}}));
  connect(synchronousGenerator_FullModel.P_m_in, P_m.y) annotation(
-    Line(points = {{-10, 12}, {-18, 12}, {-18, 26}, {-84, 26}, {-84, 14}}, color = {0, 0, 127}));
+    Line(points={{-10,12},{-18,12},{-18,26},{-83.5,26},{-83.5,13}},        color = {0, 0, 127}));
  connect(synchronousGenerator_FullModel.v_fd_in, exciterSteadyState.vfd) annotation(
     Line(points = {{-10, 8}, {-28, 8}}, color = {0, 0, 127}));
   annotation(
     Diagram(coordinateSystem(preserveAspectRatio = false, initialScale = 0.1)),
-    Icon(coordinateSystem(preserveAspectRatio = false, initialScale = 0.1), graphics = {Ellipse(extent = {{-60, 58}, {60, -62}}, endAngle = 360), Ellipse(extent = {{-40, 38}, {40, -42}}, endAngle = 360), Text(extent = {{-30, 26}, {30, -26}}, textString = "SG"), Line(points = {{0, 94}, {0, 58}})}));
+    Icon(coordinateSystem(preserveAspectRatio = false, initialScale = 0.1), graphics = {Ellipse(extent = {{-60, 58}, {60, -62}}, endAngle = 360,
+          fillColor={255,255,255},
+          fillPattern=FillPattern.Solid),                                                                                                         Ellipse(extent = {{-40, 38}, {40, -42}}, endAngle = 360), Text(extent = {{-30, 26}, {30, -26}}, textString = "SG"), Line(points = {{0, 94}, {0, 58}})}));
 end SynchronousGenerator_FullModel_StaticExciter;
